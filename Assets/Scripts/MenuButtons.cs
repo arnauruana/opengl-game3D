@@ -14,6 +14,7 @@ public class MenuButtons : MonoBehaviour
     public Button no;
     public Button yes;
     public Button back;
+    public Button back2;
     void Start()
     {
         play.Select();
@@ -59,10 +60,12 @@ public class MenuButtons : MonoBehaviour
     {
         options.SetActive(true);
         mainmenu.SetActive(false);
+        back2.Select();
     }
 
     public void goMenu()
     {
+        controls.SetActive(false);
         options.SetActive(false);
         credits.SetActive(false);
         mainmenu.SetActive(true);

@@ -16,7 +16,7 @@ public class InitMenu : MonoBehaviour
     {
         credits.SetActive(false);
         options.SetActive(false);
-        //controls.SetActive(false);
+        controls.SetActive(false);
         surequit.SetActive(false);
         mainmenu.SetActive(true);
        
