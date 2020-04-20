@@ -7,11 +7,12 @@ public class NaveController : MonoBehaviour
     [Header("Targets")]
     public Transform aimTarget;
     public Transform moveTarget;
-    
+    public Transform player;
+
     [Header("Speeds")]
-    public float movementSpeed = 15f;
-    public float cameraSpeed = 15f;
-    public float rotationSpeed = 15f;
+    public float movementSpeed =45f;
+    public float cameraSpeed = 45f;
+    public float rotationSpeed = 45f;
 
     private Camera camera;
     private float startDistance = 5f;
@@ -47,7 +48,8 @@ public class NaveController : MonoBehaviour
     //Hace que avance en el eje z
     void MoveForward()
     {
-        camera.transform.position += camera.transform.forward * cameraSpeed * Time.deltaTime;
+       // camera.transform.position += camera.transform.forward * cameraSpeed * Time.deltaTime;
+        player.position += player.forward * cameraSpeed * Time.deltaTime;
     }
 
     //Mueve Player hacia el MoveTarget
