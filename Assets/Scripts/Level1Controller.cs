@@ -12,7 +12,12 @@ public class Level1Controller : MonoBehaviour
     public Transform torreta2;
     public Transform torreta3;
 
+    private bool win;
     // Update is called once per frame
+    void Start()
+    {
+        win = false;
+    }
     void Update()
     {
         Quaternion rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
@@ -21,5 +26,11 @@ public class Level1Controller : MonoBehaviour
         torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 20 * Time.deltaTime);
         rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
         torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 20 * Time.deltaTime);
+    }
+
+    public void SetWin()
+    {
+        win = true;
+        Debug.Log("Win!");
     }
 }

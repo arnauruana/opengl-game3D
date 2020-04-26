@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public NaveController naveController;
+    public disparador disparador;
     public Transform nave;
 
     private Vector3 posIni;
@@ -21,7 +22,13 @@ public class PlayerController : MonoBehaviour
         //float h = Input.GetAxis("Mouse X");
         //float v = Input.GetAxis("Mouse Y");
         naveController.Move(h, v);
-
     }
-
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            Debug.Log("PIUN!");
+            disparador.CreateFireball();
+        }
+    }
 }
