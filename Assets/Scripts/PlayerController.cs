@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Controller")]
     public NaveController naveController;
     public disparador disparador;
     public Transform nave;
 
     private Vector3 posIni;
     private float h, v;
+
+    [Header("Variables de juego")]
+    public int maxLife=100;
+    public int currentLife = 0;
+    public HealthBar healthbar;
     void Start()
     {
         posIni = nave.transform.position;
+        currentLife = maxLife;
+        healthbar.SetMaxHealth(maxLife);
+        healthbar.SetHealth(currentLife);
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -29,6 +38,14 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("PIUN!");
             disparador.CreateFireball();
+            Damage(10);
         }
+    }
+
+    void Damage(int damage)
+    {
+        currentLife -= damage;
+
+        healthbar.SetHealth(currentLife);
     }
 }

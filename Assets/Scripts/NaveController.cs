@@ -6,13 +6,12 @@ public class NaveController : MonoBehaviour
 {
     public Level1Controller level1Controller;
 
-    [Header("Targets")]
-    public Transform aimTarget;
-    public Transform moveTarget;
+   
+    public Transform lookBall;
+    public Transform moveBall;
     public Transform player;
 
-    [Header("Speeds")]
-    public float movementSpeed =45f;
+    public float movementSpeed = 45f;
     public float cameraSpeed = 45f;
     public float rotationSpeed = 45f;
 
@@ -29,18 +28,17 @@ public class NaveController : MonoBehaviour
     public void Move(float h, float v)
     {
         MoveXY(h, v);
-        //MoveZ no es necesario con el dollycart
-       // MoveZ();
-        MovePlayerToMoveTarget();
-        RotatePlayerToAimTarget();
+        GotoMoveBall();
+        RotatetoLookBall();
     }
 
     //Mueve el MoveTarget segun el input
-    void MoveXY(float h, float v)
+    void MoveXY(float x, float y)
     {
-        Vector3 dir = new Vector3(h, v, 0);
+        Vector3 dir = new Vector3(x, y, 0);
         Vector3 force = dir * movementSpeed;
-        moveTarget.localPosition += force * Time.deltaTime;
+        moveBall.localPosition += force * Time.deltaTime;
+
         //en pruebas
         Clamp();
     }
@@ -52,33 +50,26 @@ public class NaveController : MonoBehaviour
         transform.position = Camera.main.ViewportToWorldPoint(new Vector3(Mathf.Clamp01(pos.x), Mathf.Clamp01(pos.y), pos.z));
     }
 
-    //Hace que avance en el eje z
-    void MoveZ()
-    {
-       // camera.transform.position += camera.transform.forward * cameraSpeed * Time.deltaTime;
-        player.position += player.forward * cameraSpeed * Time.deltaTime;
-    }
-
     //Mueve Player hacia el MoveTarget
-    void MovePlayerToMoveTarget()
+    void GotoMoveBall()
     {
-        Vector3 moveTargetPos = moveTarget.position;
+        Vector3 moveBallPos = moveBall.position;
         Vector3 playerPos = transform.position;
 
-        transform.position = Vector3.MoveTowards(playerPos, moveTargetPos, movementSpeed * Time.deltaTime); //multiplicar por velocidad
+        transform.position = Vector3.MoveTowards(playerPos, moveBallPos, movementSpeed * Time.deltaTime); //multiplicar por velocidad
 
-        //Recupera la distancia z entre el MoveTarget y el player
+        //Recupera la distancia z entre la bola de movimiento y el player
         Vector3 localPlayerPos = transform.localPosition;
         localPlayerPos.z = startDistance;
         transform.localPosition = localPlayerPos;
     }
 
     //Hace que la nave apunte al AimTarget
-    void RotatePlayerToAimTarget()
+    void RotatetoLookBall()
     {
-        Quaternion rotation = Quaternion.LookRotation((aimTarget.position - transform.position).normalized);
+        Quaternion rotation = Quaternion.LookRotation((lookBall.position - transform.position).normalized);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
-       // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(aimTarget.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
+       // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookBall.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
     }
 
 
