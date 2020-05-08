@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 150834085}
   - component: {fileID: 150834086}
   m_Layer: 0
-  m_Name: Disparador
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,12 +224,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150834084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.4100037, z: 13.669998}
+  m_LocalRotation: {x: -0, y: 1.1641531e-10, z: 1.8189892e-12, w: 1}
+  m_LocalPosition: {x: -0.067, y: 0.865, z: 1.486}
   m_LocalScale: {x: 0.30000007, y: 0.3, z: 0.30000007}
   m_Children: []
-  m_Father: {fileID: 904496394}
-  m_RootOrder: 0
+  m_Father: {fileID: 2065385380}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &150834086
 MonoBehaviour:
@@ -669,7 +669,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 1006584765}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -793,7 +793,7 @@ Transform:
   m_Children:
   - {fileID: 1178106902}
   m_Father: {fileID: 904496394}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &496275348
 SphereCollider:
@@ -5830,7 +5830,6 @@ Transform:
   m_LocalPosition: {x: 0.02, y: 4.41, z: -4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 150834085}
   - {fileID: 496275347}
   - {fileID: 2065385380}
   m_Father: {fileID: 192192088}
@@ -13046,8 +13045,9 @@ Transform:
   m_Children:
   - {fileID: 5427118333388196633}
   - {fileID: 8363404674235196126}
+  - {fileID: 150834085}
   m_Father: {fileID: 904496394}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2065385381
 MonoBehaviour:
@@ -13068,7 +13068,7 @@ MonoBehaviour:
   movementSpeed: 30
   cameraSpeed: 30
   rotationSpeed: 30
-  camera: {fileID: 1006584765}
+  camera: {fileID: 0}
 --- !u!1 &2066749417
 GameObject:
   m_ObjectHideFlags: 0
