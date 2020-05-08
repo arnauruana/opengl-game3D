@@ -772,7 +772,6 @@ GameObject:
   - component: {fileID: 496275347}
   - component: {fileID: 496275350}
   - component: {fileID: 496275349}
-  - component: {fileID: 496275348}
   m_Layer: 0
   m_Name: Move Ball
   m_TagString: Untagged
@@ -795,19 +794,6 @@ Transform:
   m_Father: {fileID: 904496394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &496275348
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496275346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &496275349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6840,7 +6826,6 @@ GameObject:
   - component: {fileID: 1178106902}
   - component: {fileID: 1178106905}
   - component: {fileID: 1178106904}
-  - component: {fileID: 1178106903}
   - component: {fileID: 1178106906}
   m_Layer: 0
   m_Name: Look Ball
@@ -6868,19 +6853,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!135 &1178106903
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178106901}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1178106904
 MeshRenderer:
   m_ObjectHideFlags: 0
