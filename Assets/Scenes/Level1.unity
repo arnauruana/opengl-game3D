@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 192192088}
   - component: {fileID: 192192087}
   m_Layer: 0
-  m_Name: DollyCart1
+  m_Name: Cart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,14 +320,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192192086}
   m_LocalRotation: {x: -0.01614167, y: 0.0028790594, z: 0.000046479072, w: 0.9998656}
-  m_LocalPosition: {x: 904.5, y: 67.83, z: -135.7}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493829049}
   - {fileID: 305130863}
   - {fileID: 904496394}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1373123600}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.848, y: 0, z: 0}
 --- !u!1 &195382669
 GameObject:
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 493829050}
   - component: {fileID: 493829052}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5707,7 +5707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &849035376 stripped
 Transform:
@@ -5720,17 +5720,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1937626211}
+    m_TransformParent: {fileID: 1297608403}
     m_Modifications:
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
-      value: tank4 (1)
+      value: Tank2
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1054.3999
+      value: 54.399902
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -5765,7 +5765,7 @@ PrefabInstance:
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -6041,7 +6041,7 @@ GameObject:
   - component: {fileID: 1006584764}
   - component: {fileID: 1006584767}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6330,7 +6330,7 @@ GameObject:
   - component: {fileID: 1078603833}
   - component: {fileID: 1078603832}
   m_Layer: 0
-  m_Name: AmbientLight
+  m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6389,7 +6389,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
+  m_AreaSize: {x: 100000, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -6405,7 +6405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078603831}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 900, y: 134, z: 1407}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6948,7 +6948,7 @@ GameObject:
   - component: {fileID: 1297608405}
   - component: {fileID: 1297608404}
   m_Layer: 0
-  m_Name: Terrain_(1000.0, 0.0, 0.0)
+  m_Name: (1,0,0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6964,9 +6964,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1000, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1716325341}
+  - {fileID: 849035376}
+  - {fileID: 953772953}
   m_Father: {fileID: 1937626211}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!154 &1297608404
 TerrainCollider:
@@ -7023,7 +7026,7 @@ GameObject:
   - component: {fileID: 1373123600}
   - component: {fileID: 1373123599}
   m_Layer: 0
-  m_Name: DollyTrack1
+  m_Name: AirTrack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7072,7 +7075,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 904.5, y: 67.83, z: -130.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 192192088}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7089,7 +7093,7 @@ GameObject:
   - component: {fileID: 1420324957}
   - component: {fileID: 1420324956}
   m_Layer: 0
-  m_Name: Torre2
+  m_Name: Tower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7167,7 +7171,7 @@ Transform:
   m_LocalScale: {x: 30, y: 70, z: 30}
   m_Children:
   - {fileID: 190508625}
-  m_Father: {fileID: 1937626211}
+  m_Father: {fileID: 2056609118}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1477540813
@@ -7491,17 +7495,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1937626211}
+    m_TransformParent: {fileID: 1297608403}
     m_Modifications:
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
-      value: tank4 (2)
+      value: Tank3
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 991.99994
+      value: -8.000061
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -7536,7 +7540,7 @@ PrefabInstance:
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -7568,7 +7572,7 @@ GameObject:
   - component: {fileID: 1749540418}
   - component: {fileID: 1749540417}
   m_Layer: 0
-  m_Name: Torre3
+  m_Name: Tower3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7646,8 +7650,8 @@ Transform:
   m_LocalScale: {x: 30, y: 60, z: 30}
   m_Children:
   - {fileID: 933323662}
-  m_Father: {fileID: 1937626211}
-  m_RootOrder: 0
+  m_Father: {fileID: 2056609118}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1858766533
 GameObject:
@@ -12664,7 +12668,7 @@ GameObject:
   - component: {fileID: 1937626211}
   - component: {fileID: 1937626212}
   m_Layer: 0
-  m_Name: Nivel1
+  m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12681,14 +12685,8 @@ Transform:
   m_LocalPosition: {x: 0.000061035156, y: 0, z: 0.000015258789}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1749540420}
-  - {fileID: 1420324959}
-  - {fileID: 1991755790}
   - {fileID: 2056609118}
   - {fileID: 1297608403}
-  - {fileID: 953772953}
-  - {fileID: 849035376}
-  - {fileID: 1716325341}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12721,7 +12719,7 @@ GameObject:
   - component: {fileID: 1991755788}
   - component: {fileID: 1991755787}
   m_Layer: 0
-  m_Name: Torre1
+  m_Name: Tower1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12799,8 +12797,8 @@ Transform:
   m_LocalScale: {x: 30, y: 65, z: 30}
   m_Children:
   - {fileID: 2104965777113727118}
-  m_Father: {fileID: 1937626211}
-  m_RootOrder: 2
+  m_Father: {fileID: 2056609118}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1997803068
 GameObject:
@@ -12951,7 +12949,7 @@ GameObject:
   - component: {fileID: 2056609117}
   - component: {fileID: 2056609116}
   m_Layer: 0
-  m_Name: Terrain_(0.0,0.0,0.0)
+  m_Name: (0,0,0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13011,9 +13009,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1991755790}
+  - {fileID: 1420324959}
+  - {fileID: 1749540420}
   m_Father: {fileID: 1937626211}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2065385379
 GameObject:
@@ -13601,7 +13602,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1937626211}
+    m_TransformParent: {fileID: 1297608403}
     m_Modifications:
     - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -13611,12 +13612,12 @@ PrefabInstance:
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
-      value: tank4
+      value: Tank1
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 993.5999
+      value: -6.4000854
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -13651,7 +13652,7 @@ PrefabInstance:
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375837, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
