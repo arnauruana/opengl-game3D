@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 625487136}
   - component: {fileID: 625487135}
   m_Layer: 0
-  m_Name: flame
+  m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6158,7 +6158,7 @@ GameObject:
   - component: {fileID: 1011539928}
   - component: {fileID: 1011539929}
   m_Layer: 0
-  m_Name: right
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6423,7 +6423,7 @@ GameObject:
   - component: {fileID: 1081406608}
   - component: {fileID: 1081406609}
   m_Layer: 0
-  m_Name: left
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7662,7 +7662,7 @@ GameObject:
   - component: {fileID: 1858766536}
   - component: {fileID: 1858766535}
   m_Layer: 0
-  m_Name: flame
+  m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12449,7 +12449,7 @@ GameObject:
   - component: {fileID: 1927565774}
   - component: {fileID: 1927565775}
   m_Layer: 0
-  m_Name: trail
+  m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12814,11 +12814,11 @@ GameObject:
   - component: {fileID: 1997803069}
   - component: {fileID: 1997803070}
   m_Layer: 0
-  m_Name: trail
+  m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1997803069
 Transform:
@@ -12883,7 +12883,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.4864807
+        value: 0.5
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -13503,7 +13503,7 @@ GameObject:
   - component: {fileID: 2328113868467205829}
   - component: {fileID: 5563002288218849081}
   m_Layer: 0
-  m_Name: body
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13690,7 +13690,7 @@ GameObject:
   - component: {fileID: 6614368427709299042}
   - component: {fileID: 2185036971799911934}
   m_Layer: 0
-  m_Name: edge
+  m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13775,7 +13775,7 @@ GameObject:
   - component: {fileID: 3606439406955409299}
   - component: {fileID: 4736750119830128370}
   m_Layer: 0
-  m_Name: thrusters
+  m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14184,7 +14184,7 @@ GameObject:
   - component: {fileID: 2315041846389965071}
   - component: {fileID: 2827939375037627761}
   m_Layer: 0
-  m_Name: patch
+  m_Name: PatchBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14202,7 +14202,7 @@ GameObject:
   - component: {fileID: 7778117965977954149}
   - component: {fileID: 3262880095563211348}
   m_Layer: 0
-  m_Name: lights-above
+  m_Name: LightsAbove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14397,7 +14397,7 @@ GameObject:
   - component: {fileID: 3984590040927039287}
   - component: {fileID: 7432186812730558646}
   m_Layer: 0
-  m_Name: lights-lateral
+  m_Name: LightsLateral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14415,7 +14415,7 @@ GameObject:
   - component: {fileID: 6137859537945825561}
   - component: {fileID: 8067466582642274395}
   m_Layer: 0
-  m_Name: windshield
+  m_Name: Windshield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
