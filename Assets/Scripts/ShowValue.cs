@@ -13,12 +13,12 @@ public class ShowValue : MonoBehaviour
 
     public void textUpdateVolume(float value)
     {
-        percentageText.text = Mathf.RoundToInt(value * 100) + "%";
+        this.percentageText.text = Mathf.RoundToInt(value * 100) + "%";
     }
 
     public void textUpdateGodMode()
     {
-        if (myToggle.isOn) onoffText.text = "On";
-        else onoffText.text = "Off";
+        if (this.myToggle.isOn) this.onoffText.text = "On";
+        else this.onoffText.text = "Off";
     }
 }

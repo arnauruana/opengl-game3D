@@ -11,10 +11,10 @@ public class InitMenu : MonoBehaviour
 
     void Start()
     {
-        credits.SetActive(false);
-        options.SetActive(false);
-        controls.SetActive(false);
-        surequit.SetActive(false);
-        mainmenu.SetActive(true);
+        this.credits.SetActive(false);
+        this.options.SetActive(false);
+        this.controls.SetActive(false);
+        this.surequit.SetActive(false);
+        this.mainmenu.SetActive(true);
     }
 }

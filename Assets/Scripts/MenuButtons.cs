@@ -12,15 +12,32 @@ public class MenuButtons : MonoBehaviour
     public GameObject surequit;
 
     public Button play;
+    public Button opts;
+    public Button conts;
+    public Button creds;
+    public Button quit;
+
     public Button no;
     public Button yes;
     public Button back;
     public Button back2;
     public Button back3;
 
+    private enum Selection
+    {
+        play,
+        options,
+        controls,
+        credits,
+        quit
+    };
+    private Selection selectedButton;
+
     void Start()
     {
-        play.Select();
+        this.play.Select();
+
+        this.selectedButton = Selection.play;
     }
 
     public void PlayGame()
@@ -36,45 +53,91 @@ public class MenuButtons : MonoBehaviour
 
     public void goCredits()
     {
-        credits.SetActive(true);
-        back.Select();
-        gameObject.SetActive(false);
+        this.selectedButton = Selection.credits;
+
+        this.credits.SetActive(true);
+        this.gameObject.SetActive(false);
+        
+        this.back.Select();
     }
     
     public void goSureQuit()
     {
-        surequit.SetActive(true);
-        gameObject.SetActive(false);
-        no.Select();
-    }
+        this.selectedButton = Selection.quit;
 
-    public void cancelquit()
-    {
-        surequit.SetActive(false);
-        gameObject.SetActive(true);
-        play.Select();
+        this.surequit.SetActive(true);
+        this.gameObject.SetActive(false);
+
+        this.no.Select();
     }
 
     public void goControls()
     {
-        controls.SetActive(true);
-        gameObject.SetActive(false);
-        back3.Select();
+        this.selectedButton = Selection.controls;
+
+        this.controls.SetActive(true);
+        this.gameObject.SetActive(false);
+
+        this.back3.Select();
     }
 
     public void goOptions()
     {
-        options.SetActive(true);
-        mainmenu.SetActive(false);
-        back2.Select();
+        this.selectedButton = Selection.options;
+
+        this.options.SetActive(true);
+        this.mainmenu.SetActive(false);
+
+        this.back2.Select();
     }
 
     public void goMenu()
     {
-        controls.SetActive(false);
-        options.SetActive(false);
-        credits.SetActive(false);
-        mainmenu.SetActive(true);
-        play.Select();
+        this.options.SetActive(false);
+        this.controls.SetActive(false);
+        this.credits.SetActive(false);
+		this.surequit.SetActive(false);
+        this.mainmenu.SetActive(true);
+
+		this.recoverSelection();
+    }
+
+    private void recoverSelection()
+    {
+        switch (selectedButton)
+        {
+        	case Selection.play:
+            {
+                this.play.Select();
+                break;
+            }
+            case Selection.options:
+            {
+                this.opts.Select();
+                break;
+            }
+            case Selection.controls:
+            {
+                this.conts.Select();
+                break;
+            }
+            case Selection.credits:
+            {
+                this.creds.Select();
+                break;
+            }
+			case Selection.quit:
+			{
+				this.quit.Select();
+				break;
+			}
+            default:
+            {
+				this.play.Select();
+
+                Debug.LogError("[SCRIPT::MenuButtons::cancelQuit] wrong button selection");
+                break;
+            }
+        }
     }
 }
