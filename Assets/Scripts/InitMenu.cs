@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 
 public class InitMenu : MonoBehaviour
 {
-    public Button play;
-
     public GameObject mainmenu;
     public GameObject credits;
     public GameObject options;

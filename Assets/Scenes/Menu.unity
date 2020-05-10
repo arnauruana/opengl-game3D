@@ -625,7 +625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &152694053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1671,7 +1671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &444441625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6723,7 +6723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe75e1b84f284194db8d9df4f6ac2ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  play: {fileID: 813987671}
   mainmenu: {fileID: 152694052}
   credits: {fileID: 1377279512}
   options: {fileID: 828657232}
@@ -6780,7 +6779,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 32.193127
+  field of view: 36.66752
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -6806,7 +6805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681424983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 433.78, y: 257, z: -1273}
+  m_LocalPosition: {x: 678, y: 294, z: -959}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

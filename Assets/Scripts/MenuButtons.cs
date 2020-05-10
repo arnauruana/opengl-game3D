@@ -1,31 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+
 public class MenuButtons : MonoBehaviour
 {
-    public Button play;
     public GameObject mainmenu;
     public GameObject credits;
     public GameObject options;
     public GameObject controls;
     public GameObject surequit;
+
+    public Button play;
     public Button no;
     public Button yes;
     public Button back;
     public Button back2;
+    public Button back3;
+
     void Start()
     {
         play.Select();
     }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
     public void QuitGame()
     {
-       
         Application.Quit();
         Debug.Log("Quit");
     }
@@ -43,6 +47,7 @@ public class MenuButtons : MonoBehaviour
         gameObject.SetActive(false);
         no.Select();
     }
+
     public void cancelquit()
     {
         surequit.SetActive(false);
@@ -54,6 +59,7 @@ public class MenuButtons : MonoBehaviour
     {
         controls.SetActive(true);
         gameObject.SetActive(false);
+        back3.Select();
     }
 
     public void goOptions()
@@ -70,7 +76,5 @@ public class MenuButtons : MonoBehaviour
         credits.SetActive(false);
         mainmenu.SetActive(true);
         play.Select();
-
     }
-
 }
