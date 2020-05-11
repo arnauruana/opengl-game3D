@@ -14,15 +14,7 @@ public class NaveController : MonoBehaviour
     public float movementSpeed = 45f;
     public float cameraSpeed = 45f;
     public float rotationSpeed = 45f;
-
-    public Camera camera;
     private float startDistance = 5f;
-
-    void Start()
-    {
-        camera = GetComponentInParent<Camera>();
-        startDistance = Vector3.Distance(camera.transform.position, transform.position);
-    }
 
     //Funcion principal
     public void Move(float h, float v)
@@ -71,7 +63,6 @@ public class NaveController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
        // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookBall.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
     }
-
 
     void OnTriggerEnter(Collider other)
     {

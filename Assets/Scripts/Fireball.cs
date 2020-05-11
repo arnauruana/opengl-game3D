@@ -3,7 +3,7 @@
 
 public class Fireball : MonoBehaviour
 {
-    public Rigidbody rigidBody;
+    public Rigidbody rb;
 
     public float speed;
 
@@ -26,7 +26,7 @@ public class Fireball : MonoBehaviour
         float y = this.forceY * Time.deltaTime;
         float z = this.forceZ * Time.deltaTime;
 
-        this.rigidBody.AddForce(x, y, z);
+        this.rb.AddForce(x, y, z);
     }
 
     public void destroyFireball()

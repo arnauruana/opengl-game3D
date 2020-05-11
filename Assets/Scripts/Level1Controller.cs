@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Level1Controller : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class Level1Controller : MonoBehaviour
     public Transform torreta3;
 
     private bool win;
-    // Update is called once per frame
+
     void Start()
     {
         win = false;
@@ -32,5 +32,10 @@ public class Level1Controller : MonoBehaviour
     {
         win = true;
         Debug.Log("Win!");
+    }
+
+    public void restartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
