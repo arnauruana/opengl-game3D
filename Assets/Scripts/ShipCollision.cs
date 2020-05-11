@@ -12,6 +12,14 @@ public class ShipCollision : MonoBehaviour
     void OnCollisionEnter()
     {
         this.cart.m_Speed = 5f; // slows down the cart of the airtack
+
+        this.explode();
+
         this.controller.Invoke("restartScene", restartDelay); // restart the secene
+    }
+
+    void explode()
+    {
+        Debug.Log("BOOM");
     }
 }

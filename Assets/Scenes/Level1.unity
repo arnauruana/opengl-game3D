@@ -13330,7 +13330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1937626212}
   cart: {fileID: 192192087}
-  restartDelay: 1
+  restartDelay: 2
 --- !u!23 &2185036971799911934
 MeshRenderer:
   m_ObjectHideFlags: 0
