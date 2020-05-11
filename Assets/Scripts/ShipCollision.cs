@@ -7,6 +7,8 @@ public class ShipCollision : MonoBehaviour
 
     public Cinemachine.CinemachineDollyCart cart;
 
+    public GameObject explosionEffect;
+
     public float restartDelay;
 
     void OnCollisionEnter()
@@ -15,11 +17,12 @@ public class ShipCollision : MonoBehaviour
 
         this.explode();
 
-        this.controller.Invoke("restartScene", restartDelay); // restart the secene
+        this.controller.Invoke("restartScene", this.restartDelay); // restart the secene
     }
 
     void explode()
     {
-        Debug.Log("BOOM");
+        Instantiate(this.explosionEffect, this.transform);
+        Destroy(this.gameObject);
     }
 }

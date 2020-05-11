@@ -13330,6 +13330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1937626212}
   cart: {fileID: 192192087}
+  explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+    type: 3}
   restartDelay: 2
 --- !u!23 &2185036971799911934
 MeshRenderer:
