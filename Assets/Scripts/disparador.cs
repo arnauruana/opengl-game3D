@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class disparador : MonoBehaviour
+public class Disparador : MonoBehaviour
 {
     public GameObject fireballprefab;
 

@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Controller")]
     public NaveController naveController;
-    public disparador disparador;
+    public Disparador disparador;
     public Transform nave;
 
     private Vector3 posIni;
