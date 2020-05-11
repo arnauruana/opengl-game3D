@@ -16,6 +16,8 @@ public class Fireball : MonoBehaviour
         this.forceX = 0f;
         this.forceY = 0f;
         this.forceZ = speed;
+
+        this.destroyFireball();
     }
 
     void FixedUpdate()
@@ -25,5 +27,10 @@ public class Fireball : MonoBehaviour
         float z = this.forceZ * Time.deltaTime;
 
         this.rigidBody.AddForce(x, y, z);
+    }
+
+    public void destroyFireball()
+    {
+        Destroy(this.gameObject, 2);
     }
 }
