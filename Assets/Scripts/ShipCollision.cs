@@ -7,7 +7,7 @@ public class ShipCollision : MonoBehaviour
 
     public Cinemachine.CinemachineDollyCart cart;
 
-    public GameObject explosionEffect;
+    // public GameObject explosionEffect; // link with the BigExplosion prefab from Unity Particle Pack 
 
     public float restartDelay;
 
@@ -22,7 +22,8 @@ public class ShipCollision : MonoBehaviour
 
     void explode()
     {
-        Instantiate(this.explosionEffect, this.transform);
+        // Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation);
+        Debug.Log("BOOM ship destroyed");
         Destroy(this.gameObject);
     }
 }
