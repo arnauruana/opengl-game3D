@@ -3,34 +3,22 @@
 
 public class Fireball : MonoBehaviour
 {
-    public Rigidbody rb;
-
     public float speed;
-
-    private float forceX;
-    private float forceY;
-    private float forceZ;
+    public float destroyDelay;
 
     void Start()
     {
-        this.forceX = 0f;
-        this.forceY = 0f;
-        this.forceZ = speed;
-
+        this.transform.Rotate(0, 180, 0);
         this.destroyFireball();
     }
 
     void FixedUpdate()
     {
-        float x = this.forceX * Time.deltaTime;
-        float y = this.forceY * Time.deltaTime;
-        float z = this.forceZ * Time.deltaTime;
-
-        this.rb.AddForce(x, y, z);
+        this.transform.Translate(speed * Vector3.right * Time.deltaTime);
     }
 
     public void destroyFireball()
     {
-        Destroy(this.gameObject, 2);
+        Destroy(this.gameObject, destroyDelay);
     }
 }

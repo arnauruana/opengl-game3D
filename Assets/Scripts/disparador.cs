@@ -7,8 +7,8 @@ public class Disparador : MonoBehaviour
 
     public void CreateFireball()
     {
-        Transform topHierachy = transform.parent.parent.parent.parent.parent.parent;
+        Transform onTopHierachy = transform.parent.parent.parent.parent.parent.parent;
 
-        Instantiate(fireballprefab, transform.position, transform.rotation, topHierachy);
+        Instantiate(fireballprefab, transform.position, transform.rotation, onTopHierachy);
     }
 }
