@@ -23,7 +23,7 @@ public class ShipCollision : MonoBehaviour
     void explode()
     {
         // Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation);
-        Debug.Log("BOOM ship destroyed");
+        Debug.Log("BOOM");
         Destroy(this.gameObject);
     }
 }
