@@ -9,6 +9,6 @@ public class Disparador : MonoBehaviour
     {
         Transform topHierachy = transform.parent.parent.parent.parent.parent.parent;
 
-        Instantiate(fireballprefab, this.transform.position, this.transform.rotation, topHierachy);
+        Instantiate(fireballprefab, transform.position, transform.rotation, topHierachy);
     }
 }
