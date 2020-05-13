@@ -23,6 +23,8 @@ public class MenuButtons : MonoBehaviour
     public Button back2;
     public Button back3;
 
+    public FadeTransition fadeTransition; 
+
     private enum Selection
     {
         play,
@@ -42,7 +44,7 @@ public class MenuButtons : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        fadeTransition.Fade();
     }
 
     public void QuitGame()
@@ -134,8 +136,6 @@ public class MenuButtons : MonoBehaviour
             default:
             {
 				this.play.Select();
-
-                Debug.LogError("[SCRIPT::MenuButtons::cancelQuit] wrong button selection");
                 break;
             }
         }
