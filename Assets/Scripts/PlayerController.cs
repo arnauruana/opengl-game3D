@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public int maxLife=100;
     public int currentLife = 0;
     public HealthBar healthbar;
+
     void Start()
     {
         posIni = nave.transform.position;
@@ -47,5 +48,10 @@ public class PlayerController : MonoBehaviour
         currentLife -= damage;
 
         healthbar.SetHealth(currentLife);
+
+        if (this.currentLife <= 0)
+        {
+            Debug.Log("DEAD");
+        }
     }
 }
