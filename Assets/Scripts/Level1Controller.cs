@@ -1,20 +1,27 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class Level1Controller : MonoBehaviour
 {
+    [Header("Menus")]
+    public GameObject gameOverMenu;
+
     [Header("Player")]
     public Transform player;
+
+    [Header("Scripts")]
+    public PlayerController playerController;
+    public Cinemachine.CinemachineDollyCart airTrackCart;
 
     [Header("Torretas")]
     public Transform torreta1;
     public Transform torreta2;
     public Transform torreta3;
 
-    [Header("Canvas")]
+    [Header("UI")]
     public GameObject healthBar;
-    public GameObject gameOverMenu;
 
     private bool win;
 
@@ -22,6 +29,7 @@ public class Level1Controller : MonoBehaviour
     {
         win = false;
     }
+
     void Update()
     {
         Quaternion rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
@@ -47,6 +55,9 @@ public class Level1Controller : MonoBehaviour
     {
         Debug.Log("GAME OVER");
         
+        this.airTrackCart.m_Speed = 0;
+        this.playerController.enabled = false;
+
         this.healthBar.SetActive(false);
         this.gameOverMenu.SetActive(true);
     }

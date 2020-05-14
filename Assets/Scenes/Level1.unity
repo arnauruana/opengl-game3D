@@ -7327,12 +7327,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0516a87f582a24647a7fa7ba0ca62105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverMenu: {fileID: 147728022}
   player: {fileID: 2065385380}
+  playerController: {fileID: 904496391}
+  airTrackCart: {fileID: 192192087}
   torreta1: {fileID: 501981498}
   torreta2: {fileID: 1102831544}
   torreta3: {fileID: 1924971339}
   healthBar: {fileID: 305130862}
-  gameOverMenu: {fileID: 147728022}
 --- !u!4 &1474772685
 Transform:
   m_ObjectHideFlags: 0
