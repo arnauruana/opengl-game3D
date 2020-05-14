@@ -6,7 +6,6 @@ public class NaveController : MonoBehaviour
 {
     public Level1Controller level1Controller;
 
-   
     public Transform lookBall;
     public Transform moveBall;
     public Transform player;
