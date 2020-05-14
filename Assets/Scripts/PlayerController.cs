@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Manager")]
-    Level1Controller level1Controller;
+    public Level1Controller level1Controller;
 
     [Header("Controller")]
     public NaveController naveController;
