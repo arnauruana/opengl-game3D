@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 305130865}
   - component: {fileID: 305130864}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HealthBar Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13551,6 +13551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1937626212}
+  player: {fileID: 0}
   cart: {fileID: 192192087}
   restartDelay: 2
 --- !u!23 &2185036971799911934

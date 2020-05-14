@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Damage(int damage)
+    public void Damage(int damage)
     {
         currentLife -= damage;
 
