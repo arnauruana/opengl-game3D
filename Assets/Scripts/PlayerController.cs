@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Manager")]
+    Level1Controller level1Controller;
+
     [Header("Controller")]
     public NaveController naveController;
     public Disparador disparador;
@@ -52,6 +55,8 @@ public class PlayerController : MonoBehaviour
         if (this.currentLife <= 0)
         {
             Debug.Log("DEAD");
+
+            this.level1Controller.gameOver();
         }
     }
 }

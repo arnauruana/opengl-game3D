@@ -12,6 +12,10 @@ public class Level1Controller : MonoBehaviour
     public Transform torreta2;
     public Transform torreta3;
 
+    [Header("Canvas")]
+    public GameObject healthBar;
+    public GameObject gameOverMenu;
+
     private bool win;
 
     void Start()
@@ -37,5 +41,13 @@ public class Level1Controller : MonoBehaviour
     public void restartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void gameOver()
+    {
+        Debug.Log("GAME OVER");
+        
+        this.healthBar.SetActive(false);
+        this.gameOverMenu.SetActive(true);
     }
 }

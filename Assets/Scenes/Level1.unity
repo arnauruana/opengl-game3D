@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 305130865}
   - component: {fileID: 305130864}
   m_Layer: 5
-  m_Name: HealthBar Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7129,6 +7129,8 @@ MonoBehaviour:
   torreta1: {fileID: 501981498}
   torreta2: {fileID: 1102831544}
   torreta3: {fileID: 1924971339}
+  healthBar: {fileID: 305130862}
+  gameOverMenu: {fileID: 0}
 --- !u!4 &1474772685
 Transform:
   m_ObjectHideFlags: 0
@@ -13799,8 +13801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6b4b86ff1fdf949a98d1f612a2158c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1937626212}
-  player: {fileID: 0}
+  controller: {fileID: 1474772684}
+  player: {fileID: 904496391}
   cart: {fileID: 192192087}
   restartDelay: 2
 --- !u!23 &2185036971799911934
