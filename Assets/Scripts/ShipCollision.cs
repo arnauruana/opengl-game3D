@@ -3,7 +3,7 @@
 
 public class ShipCollision : MonoBehaviour
 {
-    public Level1Controller controller;
+    public Level1Controller level1Controller;
     public PlayerController player;
 
     public Cinemachine.CinemachineDollyCart cart;
@@ -16,9 +16,9 @@ public class ShipCollision : MonoBehaviour
     {
         if (collision.collider.tag != "AllyFireball")
         {
-            this.cart.m_Speed = 5f; // slows down the cart of the airtack
             this.explode();
-            this.controller.Invoke("restartScene", this.restartDelay); // restart the secene
+
+            this.level1Controller.gameOver();
         }
     }
 

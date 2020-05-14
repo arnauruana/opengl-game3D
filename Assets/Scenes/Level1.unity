@@ -348,6 +348,36 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1243808919063371011, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243808919063371011, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243808919063371011, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243808919261829554, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243808919261829554, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243808919261829554, guid: 9acaabaec281c0c4c8a445b43121c712,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 1243808919917728263, guid: 9acaabaec281c0c4c8a445b43121c712,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -13810,7 +13840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6b4b86ff1fdf949a98d1f612a2158c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1474772684}
+  level1Controller: {fileID: 1474772684}
   player: {fileID: 904496391}
   cart: {fileID: 192192087}
   restartDelay: 2
