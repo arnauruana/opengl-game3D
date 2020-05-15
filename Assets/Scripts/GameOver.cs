@@ -1,18 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 
 public class GameOver : MonoBehaviour
 {
-    public Button restart;
-    public Button exit;
-
-    void Start()
-    {
-        this.restart.Select();
-    }
-
     public void restartPressed()
     {
         SceneManager.LoadScene("Level1");
