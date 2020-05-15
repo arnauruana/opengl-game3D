@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1146147864352863389}
   - component: {fileID: -6478785237420220643}
   - component: {fileID: -1168615576503380662}
-  - component: {fileID: -9094486112054034300}
+  - component: {fileID: 9043849518067891562}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: AllyFireball
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3396724340164746451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 21.19}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 2.3, y: -0, z: 21.19}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -4769,8 +4769,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccbc6602a7a94334eb913c216c9e23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4, type: 3}
+  fire: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
   speed: 500
-  destroyDelay: 3
+  destroyDelay: 2.5
 --- !u!54 &-1168615576503380662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4787,8 +4789,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &-9094486112054034300
-BoxCollider:
+--- !u!135 &9043849518067891562
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4798,5 +4800,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2
+  m_Center: {x: 3, y: 0, z: 0}
