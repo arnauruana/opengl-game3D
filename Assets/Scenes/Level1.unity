@@ -7686,6 +7686,7 @@ MonoBehaviour:
   player: {fileID: 2065385380}
   playerController: {fileID: 904496391}
   airTrackCart: {fileID: 192192087}
+  shipCollision: {fileID: 2163895174574448532}
   torreta1: {fileID: 501981498}
   torreta2: {fileID: 1102831544}
   torreta3: {fileID: 1924971339}
@@ -14179,6 +14180,8 @@ MonoBehaviour:
   level1Controller: {fileID: 1474772684}
   player: {fileID: 904496391}
   cart: {fileID: 192192087}
+  explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
+    type: 3}
   restartDelay: 2
 --- !u!23 &2185036971799911934
 MeshRenderer:

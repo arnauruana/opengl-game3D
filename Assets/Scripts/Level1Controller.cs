@@ -14,6 +14,7 @@ public class Level1Controller : MonoBehaviour
     [Header("Scripts")]
     public PlayerController playerController;
     public Cinemachine.CinemachineDollyCart airTrackCart;
+    public ShipCollision shipCollision;
 
     [Header("Torretas")]
     public Transform torreta1;
@@ -53,10 +54,10 @@ public class Level1Controller : MonoBehaviour
 
     public void gameOver()
     {
-        Debug.Log("GAME OVER");
-        
         this.airTrackCart.m_Speed = 0;
         this.playerController.enabled = false;
+
+        this.shipCollision.explode();
 
         this.healthBar.SetActive(false);
         this.gameOverMenu.SetActive(true);
