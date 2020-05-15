@@ -598,6 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df1ab7cefb395b41b3446cdc1b17e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireballprefab: {fileID: 3396724340164746451, guid: 4c4a0857e21740c49bb308841d7e2208,
+    type: 3}
 --- !u!1 &190508624
 GameObject:
   m_ObjectHideFlags: 0
