@@ -480,8 +480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df1ab7cefb395b41b3446cdc1b17e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireballprefab: {fileID: 3396724340164746451, guid: 4c4a0857e21740c49bb308841d7e2208,
-    type: 3}
 --- !u!1 &190508624
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,17 +759,17 @@ PrefabInstance:
     - target: {fileID: 5057563355278236969, guid: a79eea98f538f22458938be797927bb8,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5057563355278236969, guid: a79eea98f538f22458938be797927bb8,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5057563355278236969, guid: a79eea98f538f22458938be797927bb8,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5057563355278236969, guid: a79eea98f538f22458938be797927bb8,
         type: 3}
