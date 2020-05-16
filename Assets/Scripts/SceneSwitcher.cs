@@ -31,11 +31,6 @@ public class SceneSwitcher : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            this.switchToScene(0);
-        }
-
         if (Input.GetKeyDown(KeyCode.F1))
         {
             this.switchToScene(1);
@@ -46,7 +41,12 @@ public class SceneSwitcher : MonoBehaviour
             this.switchToScene(2);
         }
 
-        if (Input.GetKeyDown(KeyCode.F3))
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            this.switchToScene(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F6))
         {
             this.switchToScene(3);
         }
