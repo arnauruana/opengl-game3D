@@ -27,6 +27,14 @@ public class GodMode : MonoBehaviour
         this.enabled = false;
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.F9))
+        {
+            this.toggle();
+        }
+    }
+
     public void enable()
     {
         this.enabled = true;
