@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private float h, v;
 
     [Header("Variables de juego")]
+    [Header("Vida")]
     public int maxLife=100;
     public int currentLife = 0;
     public HealthBar healthbar;
@@ -43,7 +44,9 @@ public class PlayerController : MonoBehaviour
             // Debug.Log("PIUN!");
             //disparador.CreateFireball();
             // Damage(10);
-            naveController.Roll();
+           
+           naveController.DoRoll();
+           
         }
     }
 

@@ -9,19 +9,29 @@ public class NaveController : MonoBehaviour
     public Transform lookBall;
     public Transform moveBall;
     public Transform player;
-
+    
+    [Header("Velocidades")]
     public float movementSpeed = 45f;
     public float cameraSpeed = 45f;
     public float rotationSpeed = 45f;
     private float startDistance = 5f;
-    private bool noRoll=true;
+
+
+    [Header("Roll")]
+    public float rollmovementSpeed = 60;
+    public int rollrotationSpeed = 1200;
+    public float rollduration = 0.5f;
+    private bool noRoll = true;
+    
+    public RollBar rollbar;
+
 
     void Update()
     {
 
         if (!noRoll)
         {
-            transform.Rotate(0, 0, 1200 * Time.deltaTime);
+            transform.Rotate(0, 0, rollrotationSpeed  * Time.deltaTime);
         }
     }
         //Funcion principal
@@ -83,12 +93,28 @@ public class NaveController : MonoBehaviour
             level1Controller.SetWin();
         }
     }
+    //Invoca a la funcion Roll de inicio y de fin
+    public void DoRoll()
+    {
+        Roll();
+        Invoke("Roll", 0.5f);
+    }
 
+    //Si está haciendo Roll, para de hacerlo
+    //Si no lo está haciendo, lo hace
     public void Roll()
     {
-        noRoll = !noRoll;
-        if (noRoll) movementSpeed = 30;
-        else movementSpeed = 60;
+        if (rollbar.rollup)
+        {
+            noRoll = !noRoll;
+            if (noRoll)
+            {
+                movementSpeed = 30;
+                rollbar.RollDown();
+            }
+            else movementSpeed = rollmovementSpeed;
+        }
+        
         //Vector3 v = new Vector3(0, 0, 7200);
 
        //transform.Rotate(v*0.4f*Time.deltaTime);
