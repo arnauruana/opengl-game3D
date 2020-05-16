@@ -11,33 +11,41 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void switchToScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
     private void Awake()
     {
-        if (SceneSwitcher.instance != null)
-        {
-            SceneSwitcher.Destroy(this.gameObject);
-        }
-        else
+        if (SceneSwitcher.instance == null)
         {
             SceneSwitcher.instance = this;
             GameObject.DontDestroyOnLoad(this.gameObject);
         }
+        else
+        {
+            SceneSwitcher.Destroy(this.gameObject);
+        }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             this.switchToScene(0);
         }
+
         if (Input.GetKeyDown(KeyCode.F1))
         {
             this.switchToScene(1);
         }
+
         if (Input.GetKeyDown(KeyCode.F2))
         {
             this.switchToScene(2);
         }
+
         if (Input.GetKeyDown(KeyCode.F3))
         {
             this.switchToScene(3);
