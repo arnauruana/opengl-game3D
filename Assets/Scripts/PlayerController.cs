@@ -40,9 +40,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            /*Debug.Log("PIUN!");
+            // Debug.Log("PIUN!");
             disparador.CreateFireball();
-            Damage(10);*/
+            // Damage(10);
             naveController.Roll();
         }
     }
