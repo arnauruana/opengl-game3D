@@ -14,7 +14,7 @@ public class NaveController : MonoBehaviour
     public float cameraSpeed = 45f;
     public float rotationSpeed = 45f;
     private float startDistance = 5f;
-
+    private bool noRoll=true;
     //Funcion principal
     public void Move(float h, float v)
     {
@@ -58,9 +58,13 @@ public class NaveController : MonoBehaviour
     //Hace que la nave apunte al AimTarget
     void RotatetoLookBall()
     {
-        Quaternion rotation = Quaternion.LookRotation((lookBall.position - transform.position).normalized);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
-       // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookBall.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
+        if (noRoll)
+        {
+            Quaternion rotation = Quaternion.LookRotation((lookBall.position - transform.position).normalized);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+            // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookBall.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
+        }
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -71,4 +75,16 @@ public class NaveController : MonoBehaviour
         }
     }
 
-}
+    public void Roll()
+    {
+        noRoll = false;
+         /*Vector3 v = new Vector3(0, 0, 7200);
+        transform.Rotate(v*0.4f*Time.deltaTime);*/
+
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 360),3* Time.deltaTime);
+
+        //  transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 720), Time.deltaTime * 100);
+        noRoll = true;
+    }
+
+} 
