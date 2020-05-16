@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             // Debug.Log("PIUN!");
-            disparador.CreateFireball();
+            //disparador.CreateFireball();
             // Damage(10);
             naveController.Roll();
         }

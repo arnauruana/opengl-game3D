@@ -15,8 +15,17 @@ public class NaveController : MonoBehaviour
     public float rotationSpeed = 45f;
     private float startDistance = 5f;
     private bool noRoll=true;
-    //Funcion principal
-    public void Move(float h, float v)
+
+    void Update()
+    {
+
+        if (!noRoll)
+        {
+            transform.Rotate(0, 0, 1200 * Time.deltaTime);
+        }
+    }
+        //Funcion principal
+        public void Move(float h, float v)
     {
         MoveXY(h, v);
         GotoMoveBall();
@@ -77,14 +86,20 @@ public class NaveController : MonoBehaviour
 
     public void Roll()
     {
-        noRoll = false;
-         /*Vector3 v = new Vector3(0, 0, 7200);
-        transform.Rotate(v*0.4f*Time.deltaTime);*/
+        noRoll = !noRoll;
+        if (noRoll) movementSpeed = 30;
+        else movementSpeed = 60;
+        //Vector3 v = new Vector3(0, 0, 7200);
 
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 360),3* Time.deltaTime);
+       //transform.Rotate(v*0.4f*Time.deltaTime);
 
-        //  transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 720), Time.deltaTime * 100);
-        noRoll = true;
+
+       // transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 100), Time.deltaTime * 100);
+       
+        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 180),3* Time.deltaTime);
+
+       
+        //noRoll = true;
     }
 
 } 
