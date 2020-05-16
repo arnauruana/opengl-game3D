@@ -2159,8 +2159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512267206}
-  - component: {fileID: 512267205}
   - component: {fileID: 512267204}
+  - component: {fileID: 512267205}
   m_Layer: 0
   m_Name: TransitionSound
   m_TagString: Untagged
@@ -5886,7 +5886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Star Fox:
+  m_text: 'Star Fox
 
 '
   m_isRightToLeft: 0
@@ -5958,7 +5958,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -18.93518, w: 0}
   m_textInfo:
     textComponent: {fileID: 1485558157}
-    characterCount: 10
+    characterCount: 9
     spriteCount: 0
     spaceCount: 2
     wordCount: 2
@@ -8330,6 +8330,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855746797}
   m_CullTransparentMesh: 0
+--- !u!1 &1905113067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905113068}
+  - component: {fileID: 1905113069}
+  m_Layer: 0
+  m_Name: SceneSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905113068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905113067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905113069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905113067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8fab657e78c0774c95d43d0957d2429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922517589
 GameObject:
   m_ObjectHideFlags: 0
