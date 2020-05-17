@@ -6,6 +6,7 @@ public class Pause : MonoBehaviour
     private bool paused;
 
     public GameObject gameObject;
+    public GameObject gameOver;
     private SceneSwitcher sceneSwitcher;
 
     void Start()
@@ -22,8 +23,10 @@ public class Pause : MonoBehaviour
         }
     }
 
-    public void toggle()
+    private void toggle()
     {
+        if (this.gameOver.activeSelf) return;
+
         if (this.paused)
         {
             this.resumeGame();
@@ -34,14 +37,14 @@ public class Pause : MonoBehaviour
         }
     }
 
-    public void pauseGame()
+    private void pauseGame()
     {
         this.gameObject.SetActive(true);
         Time.timeScale = 0;
         this.paused = true;
     }
 
-    public void resumeGame()
+    private void resumeGame()
     {
         this.gameObject.SetActive(false);
         Time.timeScale = 1;
@@ -55,11 +58,13 @@ public class Pause : MonoBehaviour
 
     public void restartPressed()
     {
+        Time.timeScale = 1;
         this.sceneSwitcher.reloadScene();
     }
 
     public void exitPressed()
     {
+        Time.timeScale = 1;
         this.sceneSwitcher.switchToScene("Menu");
     }
 }
