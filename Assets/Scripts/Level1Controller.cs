@@ -15,6 +15,7 @@ public class Level1Controller : MonoBehaviour
     public PlayerController playerController;
     public Cinemachine.CinemachineDollyCart airTrackCart;
     public ShipCollision shipCollision;
+    public Pause pauseMenu;
 
     [Header("Torretas")]
     public Transform torreta1;
@@ -39,6 +40,14 @@ public class Level1Controller : MonoBehaviour
         torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 20 * Time.deltaTime);
         rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
         torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 20 * Time.deltaTime);
+    }
+
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            this.pauseMenu.toggle();
+        }
     }
 
     public void SetWin()
