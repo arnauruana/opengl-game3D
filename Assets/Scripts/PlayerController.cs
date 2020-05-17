@@ -31,12 +31,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
-        //float h = Input.GetAxis("Mouse X");
-        //float v = Input.GetAxis("Mouse Y");
+        // *******Mover con el teclado *******
+         h = Input.GetAxis("Horizontal");
+         v = Input.GetAxis("Vertical");
+
+        // *******Mover con el ratón *******
+        // h = Input.GetAxis("Mouse X");
+        // v = Input.GetAxis("Mouse Y");
         naveController.Move(h, v);
-    }
+    } 
     void Update()
     {
         if (Input.GetKeyDown("space"))
