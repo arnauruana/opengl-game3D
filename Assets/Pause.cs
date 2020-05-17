@@ -3,16 +3,28 @@
 
 public class Pause : MonoBehaviour
 {
+    private bool paused;
+
+    public GameObject gameObject;
     private SceneSwitcher sceneSwitcher;
 
-    private void Start()
+    void Start()
     {
+        this.paused = false;
         this.sceneSwitcher = GameObject.FindObjectOfType<SceneSwitcher>();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            this.toggle();
+        }
     }
 
     public void toggle()
     {
-        if (this.gameObject.activeSelf)
+        if (this.paused)
         {
             this.resumeGame();
         }
@@ -20,6 +32,20 @@ public class Pause : MonoBehaviour
         {
             this.pauseGame();
         }
+    }
+
+    public void pauseGame()
+    {
+        this.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        this.paused = true;
+    }
+
+    public void resumeGame()
+    {
+        this.gameObject.SetActive(false);
+        Time.timeScale = 1;
+        this.paused = false;
     }
 
     public void continuePressed()
@@ -35,17 +61,5 @@ public class Pause : MonoBehaviour
     public void exitPressed()
     {
         this.sceneSwitcher.switchToScene("Menu");
-    }
-
-    public void pauseGame()
-    {
-        // Time.timeScale = 0;
-        this.gameObject.SetActive(true);
-    }
-
-    private void resumeGame()
-    {
-        this.gameObject.SetActive(false);
-        // Time.timeScale = 1;
     }
 }
