@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
         // *******Mover con el ratón *******
         // h = Input.GetAxis("Mouse X");
         // v = Input.GetAxis("Mouse Y");
+        
         naveController.Move(h, v);
     } 
     void Update()

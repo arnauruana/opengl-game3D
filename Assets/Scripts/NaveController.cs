@@ -28,14 +28,14 @@ public class NaveController : MonoBehaviour
 
     void Update()
     {
-
         if (!noRoll)
         {
             transform.Rotate(0, 0, rollrotationSpeed  * Time.deltaTime);
         }
     }
-        //Funcion principal
-        public void Move(float h, float v)
+
+    //Funcion principal
+    public void Move(float h, float v)
     {
         MoveXY(h, v);
         GotoMoveBall();
@@ -83,7 +83,6 @@ public class NaveController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
             // transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookBall.position), Mathf.Deg2Rad * rotationSpeed * Time.deltaTime);
         }
-
     }
 
     void OnTriggerEnter(Collider other)
@@ -114,18 +113,6 @@ public class NaveController : MonoBehaviour
             }
             else movementSpeed = rollmovementSpeed;
         }
-        
-        //Vector3 v = new Vector3(0, 0, 7200);
-
-       //transform.Rotate(v*0.4f*Time.deltaTime);
-
-
-       // transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 100), Time.deltaTime * 100);
-       
-        //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, 180),3* Time.deltaTime);
-
-       
-        //noRoll = true;
     }
 
 } 

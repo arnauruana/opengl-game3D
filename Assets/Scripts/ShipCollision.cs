@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-
 public class ShipCollision : MonoBehaviour
 {
     public Level1Controller level1Controller;
@@ -11,6 +10,8 @@ public class ShipCollision : MonoBehaviour
     public GameObject explosionEffect;
 
     public float restartDelay;
+
+      
 
     void OnCollisionEnter(Collision collision)
     {
