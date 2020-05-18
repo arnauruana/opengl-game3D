@@ -34,11 +34,16 @@ public class Level1Controller : MonoBehaviour
     void Update()
     {
         Quaternion rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
-        torreta1.rotation = Quaternion.Lerp(torreta1.rotation, rotation, 20 * Time.deltaTime);
+        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta1.rotation.eulerAngles.z);
+        torreta1.rotation = Quaternion.Lerp(torreta1.rotation, rotation, 30 * Time.deltaTime);
+
         rotation = Quaternion.LookRotation((player.position - torreta2.position).normalized);
-        torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 20 * Time.deltaTime);
+        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta2.rotation.eulerAngles.z);
+        torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 30 * Time.deltaTime);
+
         rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
-        torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 20 * Time.deltaTime);
+        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta3.rotation.eulerAngles.z);
+        torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 30 * Time.deltaTime);
     }
 
     public void SetWin()
