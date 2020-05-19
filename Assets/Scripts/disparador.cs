@@ -12,16 +12,17 @@ public class Disparador : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(Input.mousePosition);
+            Ray target = this.camera.ScreenPointToRay(Input.mousePosition);
+            this.transform.rotation = Quaternion.Euler(target.direction);
             this.shootFireball();
         }
     }
 
     public void shootFireball()
     {
-        Transform onTopHierachy = transform.parent.parent.parent.parent.parent.parent;
+        Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
 
-        GameObject fireball = Instantiate(this.fireball, transform.position, transform.rotation, onTopHierachy) as GameObject;
+        GameObject fireball = Instantiate(this.fireball, this.transform.position, this.transform.rotation, onTopHierachy) as GameObject;
         Destroy(fireball, this.destroyDelay);
     }
 }
