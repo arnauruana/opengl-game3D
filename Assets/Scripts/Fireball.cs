@@ -15,12 +15,11 @@ public class Fireball : MonoBehaviour
 
     void Start()
     {
-        this.transform.Rotate(0, 180, 0);
     }
 
     void FixedUpdate()
     {
-        this.transform.Translate(speed * Vector3.right * Time.deltaTime);
+        this.transform.Translate(speed * Vector3.forward * Time.deltaTime);
     }
 
     void OnCollisionEnter(Collision collision)

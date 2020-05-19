@@ -7330,6 +7330,21 @@ PrefabInstance:
       propertyPath: destroyDelay
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426140645961574, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_Enabled
