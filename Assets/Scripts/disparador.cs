@@ -3,6 +3,7 @@
 
 public class Disparador : MonoBehaviour
 {
+    public Camera camera;
     public GameObject fireball;
 
     public float destroyDelay;
@@ -12,6 +13,7 @@ public class Disparador : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 target = Input.mousePosition;
+            // Vector3 target = this.camera.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log(target);
             this.transform.LookAt(target);
             this.shootFireball();
