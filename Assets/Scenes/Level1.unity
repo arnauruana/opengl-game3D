@@ -7318,7 +7318,7 @@ PrefabInstance:
         type: 3}
       propertyPath: camera
       value: 
-      objectReference: {fileID: 966564054}
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: fireball
