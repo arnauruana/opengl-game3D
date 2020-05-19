@@ -13,10 +13,6 @@ public class Fireball : MonoBehaviour
 
     private Collision collision;
 
-    void Start()
-    {
-    }
-
     void FixedUpdate()
     {
         this.transform.Translate(speed * Vector3.forward * Time.deltaTime);
