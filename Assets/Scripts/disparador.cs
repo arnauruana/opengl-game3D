@@ -3,12 +3,25 @@
 
 public class Disparador : MonoBehaviour
 {
-    public GameObject fireballprefab;
+    public Camera camera;
+    public GameObject fireball;
 
-    public void CreateFireball()
+    public float destroyDelay;
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log(Input.mousePosition);
+            this.shootFireball();
+        }
+    }
+
+    public void shootFireball()
     {
         Transform onTopHierachy = transform.parent.parent.parent.parent.parent.parent;
 
-        Instantiate(fireballprefab, transform.position, transform.rotation, onTopHierachy);
+        GameObject fireball = Instantiate(this.fireball, transform.position, transform.rotation, onTopHierachy) as GameObject;
+        Destroy(fireball, this.destroyDelay);
     }
 }

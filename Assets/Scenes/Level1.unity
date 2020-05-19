@@ -7314,6 +7314,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 966564054}
+    - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: fireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9,
+        type: 3}
+    - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: destroyDelay
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426140645961574, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_Enabled
