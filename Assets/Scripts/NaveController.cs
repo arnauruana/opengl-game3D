@@ -9,6 +9,8 @@ public class NaveController : MonoBehaviour
     public Transform lookBall;
     public Transform moveBall;
     public Transform player;
+
+    public AudioSource rollSound;
     
     [Header("Velocidades")]
     public float movementSpeed = 45f;
@@ -95,6 +97,10 @@ public class NaveController : MonoBehaviour
     //Invoca a la funcion Roll de inicio y de fin
     public void DoRoll()
     {
+        if (rollbar.rollup)
+        {
+            this.rollSound.Play();
+        }
         Roll();
         Invoke("Roll", 0.5f);
     }
