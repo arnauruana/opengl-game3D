@@ -3958,6 +3958,12 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!82 &1303562689 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7349201886149715231, guid: 08bef709fd0536144a1c989405b5fc9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5246426140420219123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1333390630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7338,8 +7344,13 @@ PrefabInstance:
     - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: fireRate
-      value: 5
+      value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 1303562689}
     - target: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_LocalRotation.y

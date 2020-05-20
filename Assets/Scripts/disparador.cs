@@ -5,6 +5,7 @@ public class Disparador : MonoBehaviour
 {
     public Camera camera;
     public GameObject fireball;
+    public AudioSource shotSound;
 
     public float maximumLength;
     public float destroyDelay;
@@ -55,6 +56,8 @@ public class Disparador : MonoBehaviour
     private void shootFireball()
     {
         Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
+
+        this.shotSound.Play();
 
         GameObject fireball = Instantiate(this.fireball, this.transform.position, this.transform.rotation, onTopHierachy) as GameObject;
         Destroy(fireball, this.destroyDelay);
