@@ -25,9 +25,9 @@ public class ShipCollision : MonoBehaviour
 
     public void explode()
     {
-        Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation);
+        GameObject explosion = Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation) as GameObject;
 
-        Destroy(this.explosionEffect);
-        Destroy(this.gameObject);
+        Destroy(explosion, 8);
+        Destroy(this.transform.parent.gameObject);
     }
 }
