@@ -6,21 +6,53 @@ public class Disparador : MonoBehaviour
     public Camera camera;
     public GameObject fireball;
 
+    public float maximumLength;
     public float destroyDelay;
+    public float fireRate;
+    
+    private Ray rayMouse;
+    private Vector3 position;
+    private Vector3 direction;
+    private Quaternion rotation;
+
+    private float timeToFire;
+
+    void Start()
+    {
+        this.timeToFire = 0f;
+    }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0) && Time.time >= this.timeToFire)
         {
-            Vector3 target = Input.mousePosition;
-            // Vector3 target = this.camera.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(target);
-            this.transform.LookAt(target);
+            this.timeToFire = Time.time + 1 / this.fireRate;
+
+            this.rayMouse = this.camera.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit hit;
+            if (Physics.Raycast(this.rayMouse.origin, this.rayMouse.direction, out hit, this.maximumLength))
+            {
+                this.rotateToMouseDirection(this.gameObject, hit.point);
+            }
+            else
+            {
+                this.position = this.rayMouse.GetPoint(this.maximumLength);
+                this.rotateToMouseDirection(this.gameObject, this.position);
+            }
+
             this.shootFireball();
         }
     }
 
-    public void shootFireball()
+    private void rotateToMouseDirection(GameObject obj, Vector3 destination)
+    {
+        this.direction = destination - obj.transform.position;
+        this.rotation = Quaternion.LookRotation(this.direction);
+        obj.transform.localRotation = Quaternion.Lerp(obj.transform.rotation, rotation, 1);
+    }
+
+    private void shootFireball()
     {
         Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
 
