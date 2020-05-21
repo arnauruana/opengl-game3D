@@ -3,7 +3,10 @@ guid: 2df1ab7cefb395b41b3446cdc1b17e81
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - camera: {instanceID: 0}
+  - fireball: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
+  - shotSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
