@@ -8,6 +8,7 @@ TagManager:
   - AllyFireball
   - AllyShip
   - Terrain
+  - Laser
   layers:
   - Default
   - TransparentFX

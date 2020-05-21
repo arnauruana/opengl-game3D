@@ -30,4 +30,11 @@ public class ShipCollision : MonoBehaviour
         Destroy(explosion, 8);
         Destroy(this.transform.parent.gameObject);
     }
+
+
+    void OnParticleTrigger()
+    {
+        this.explode();
+        this.level1Controller.gameOver();
+    }
 }
