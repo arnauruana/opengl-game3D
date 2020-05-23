@@ -1887,8 +1887,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.6886792, g: 0.4075512, b: 0.068218224, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.5188679, g: 0.33315837, b: 0.10524208, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7515,10 +7515,20 @@ PrefabInstance:
       propertyPath: m_Parameters.colorGradient.key2.a
       value: 0.8627451
       objectReference: {fileID: 0}
+    - target: {fileID: 5246426141274042684, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.atime2
+      value: 9830
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426141342183117, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246426141342183117, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.atime2
+      value: 9830
       objectReference: {fileID: 0}
     - target: {fileID: 5246426141596212453, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
