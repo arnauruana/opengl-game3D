@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2615486369782789125}
   - component: {fileID: 2615486369782789122}
   m_Layer: 0
-  m_Name: Tower1
+  m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +28,9 @@ Transform:
   m_GameObject: {fileID: 2615486369782789123}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 874.2, y: 32.4, z: 70.6}
-  m_LocalScale: {x: 30, y: 65, z: 30}
+  m_LocalScale: {x: 15, y: 65, z: 15}
   m_Children:
-  - {fileID: 8335656881189998796}
+  - {fileID: 132895890492901018}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &4147611461450553746
+--- !u!1001 &5474496403893374916
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -156,6 +156,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5341679700542982494, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341679700542982494, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.04615383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341679700542982494, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19999997
+      objectReference: {fileID: 0}
     - target: {fileID: 8969530786064726861, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
         type: 3}
       propertyPath: m_Name
@@ -163,9 +178,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2d00bba8df31841b0ff9202ebe47f5, type: 3}
---- !u!4 &8335656881189998796 stripped
+--- !u!4 &132895890492901018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5341679700542982494, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
     type: 3}
-  m_PrefabInstance: {fileID: 4147611461450553746}
+  m_PrefabInstance: {fileID: 5474496403893374916}
   m_PrefabAsset: {fileID: 0}

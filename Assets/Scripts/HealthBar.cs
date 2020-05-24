@@ -7,6 +7,7 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image healthbar;
+    public ShipCollision ship;
 
     public void SetMaxHealth(int maxhealth)
     {
@@ -18,5 +19,19 @@ public class HealthBar : MonoBehaviour
     {
         slider.value = health;
         healthbar.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
+    public void Damage(int damage)
+    {
+        slider.value -= damage;
+        healthbar.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
+    private void Check()
+    {
+        if (this.slider.value <= 0)
+        {
+            this.ship.explode();
+        }
     }
 }
