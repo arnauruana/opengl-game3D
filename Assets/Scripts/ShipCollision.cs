@@ -11,8 +11,7 @@ public class ShipCollision : MonoBehaviour
     public GameObject explosionEffect;
 
     public float restartDelay;
-
-      
+       
 
     void OnCollisionEnter(Collision collision)
     {

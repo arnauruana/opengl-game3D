@@ -21,6 +21,7 @@ public class CameraPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (this.player == null) return;
         LookPlayer();
         ClampCamera();
     }

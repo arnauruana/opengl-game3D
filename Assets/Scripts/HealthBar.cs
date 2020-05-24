@@ -35,7 +35,7 @@ public class HealthBar : MonoBehaviour
         if (this.slider.value <= 0)
         {
             this.ship.explode();
-             this.level1Controller.gameOver();
+            this.level1Controller.gameOver();
         }
     }
 }

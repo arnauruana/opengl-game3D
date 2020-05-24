@@ -4680,7 +4680,7 @@ GameObject:
   - component: {fileID: 6470678567890747800}
   m_Layer: 0
   m_Name: FireBall
-  m_TagString: Untagged
+  m_TagString: AllyFireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

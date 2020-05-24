@@ -40,9 +40,12 @@ public class Level1Controller : MonoBehaviour
     void Update()
     {
         Quaternion rotation;
+
+        if (this.player == null) return;
+
         Vector3 aim = this.player.position + new Vector3(0, 0, 10);
 
-        if (dist(player.position, torreta1.position) < this.turretTrigger1.shotRange)
+        if (this.torreta1 != null && dist(player.position, torreta1.position) < this.turretTrigger1.shotRange)
         {
             rotation = Quaternion.LookRotation((aim - torreta1.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta1.rotation.eulerAngles.z);
@@ -50,7 +53,7 @@ public class Level1Controller : MonoBehaviour
             this.turretTrigger1.shoot();
         }
 
-        if (dist(player.position, torreta2.position) < this.turretTrigger2.shotRange)
+        if (this.torreta2 != null && dist(player.position, torreta2.position) < this.turretTrigger2.shotRange)
         {
             rotation = Quaternion.LookRotation((aim - torreta2.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta2.rotation.eulerAngles.z);
@@ -58,7 +61,7 @@ public class Level1Controller : MonoBehaviour
             this.turretTrigger2.shoot();
         }
 
-        if (dist(player.position, torreta3.position) < this.turretTrigger3.shotRange)
+        if (this.torreta3 != null && dist(player.position, torreta3.position) < this.turretTrigger3.shotRange)
         {
             rotation = Quaternion.LookRotation((aim - torreta3.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta3.rotation.eulerAngles.z);
