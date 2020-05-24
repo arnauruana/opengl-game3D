@@ -28,7 +28,7 @@ public class Trigger : MonoBehaviour
 
     private void shootFireball()
     {
-        //this.shotSound.Play();
+        this.shotSound.Play();
 
         Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
         GameObject fireball = Instantiate(this.fireBall, this.transform.position, this.transform.rotation, onTopHierachy) as GameObject;
