@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2615486369782789125}
   - component: {fileID: 2615486369782789122}
   m_Layer: 0
-  m_Name: Tower1
+  m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,6 +156,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6275522375741860074, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.77162397
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275522375741860074, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.636079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275522375741860074, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275522375741860074, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965096569826378924, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: aimRotation
+      value: 
+      objectReference: {fileID: 7969230574932111736}
     - target: {fileID: 8969530786064726861, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
         type: 3}
       propertyPath: m_Name
@@ -166,6 +191,12 @@ PrefabInstance:
 --- !u!4 &8335656881189998796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5341679700542982494, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4147611461450553746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7969230574932111736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6275522375741860074, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
     type: 3}
   m_PrefabInstance: {fileID: 4147611461450553746}
   m_PrefabAsset: {fileID: 0}

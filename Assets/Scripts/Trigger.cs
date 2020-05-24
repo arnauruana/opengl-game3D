@@ -5,6 +5,7 @@ public class Trigger : MonoBehaviour
 {
     public GameObject fireBall;
     public AudioSource shotSound;
+    public Transform aimRotation;
 
     public float destroyDelay;
     public float fireRate;
@@ -31,7 +32,7 @@ public class Trigger : MonoBehaviour
         this.shotSound.Play();
 
         Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
-        GameObject fireball = Instantiate(this.fireBall, this.transform.position, this.transform.rotation, onTopHierachy) as GameObject;
+        GameObject fireball = Instantiate(this.fireBall, this.aimRotation.position, this.aimRotation.rotation, onTopHierachy) as GameObject;
         Destroy(fireball, this.destroyDelay);
     }
 }

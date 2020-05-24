@@ -183,12 +183,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6112066709214337416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -5.83, z: -4.81}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 2.1699996, z: 4.8100038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5341679700542982494}
-  m_RootOrder: 4
+  m_Father: {fileID: 6275522375741860074}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8965096569826378924
 MonoBehaviour:
@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBall: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e, type: 3}
   shotSound: {fileID: 8000627232168497202}
+  aimRotation: {fileID: 6275522375741860074}
   destroyDelay: 2.5
   fireRate: 0.5
   shotRange: 0
@@ -333,6 +334,7 @@ Transform:
   - {fileID: 3397972934905892416}
   - {fileID: 4173271979496810284}
   - {fileID: 8602012359461015067}
+  - {fileID: 8185489652504833676}
   m_Father: {fileID: 5341679700542982494}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
@@ -604,7 +606,6 @@ Transform:
   - {fileID: 4305629850653208943}
   - {fileID: 8354191441743259093}
   - {fileID: 5095813027200757330}
-  - {fileID: 8185489652504833676}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
