@@ -18,7 +18,7 @@ public class Trigger : MonoBehaviour
         this.timeToFire = 0f;
     }
 
-    void Update()
+    public void shoot()
     {
         if (Time.time >= this.timeToFire)
         {

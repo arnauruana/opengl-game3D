@@ -207,7 +207,7 @@ MonoBehaviour:
   aimRotation: {fileID: 6275522375741860074}
   destroyDelay: 2.5
   fireRate: 0.5
-  shotRange: 0
+  shotRange: 100
 --- !u!82 &8000627232168497202
 AudioSource:
   m_ObjectHideFlags: 0

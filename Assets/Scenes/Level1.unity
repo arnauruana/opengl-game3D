@@ -1043,6 +1043,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 956bd2acf7aae244dac8fc20cf57858d, type: 3}
+--- !u!114 &228719497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5036481730086329662, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1346308929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e9ac86f1c8534b9d8d94977a51f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &272991490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1690,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 411677305}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &493478031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5036481730086329662, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 689753020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e9ac86f1c8534b9d8d94977a51f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &515325889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1747,6 +1771,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 956bd2acf7aae244dac8fc20cf57858d, type: 3}
+--- !u!114 &523884792 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5036481730086329662, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 542636278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e9ac86f1c8534b9d8d94977a51f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &527694210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: be878d9ea17907f4a8068678a5ce7908,
@@ -3751,6 +3787,9 @@ MonoBehaviour:
   playerController: {fileID: 904496391}
   airTrackCart: {fileID: 192192087}
   shipCollision: {fileID: 2163895174574448532}
+  turretTrigger1: {fileID: 228719497}
+  turretTrigger2: {fileID: 493478031}
+  turretTrigger3: {fileID: 523884792}
   torreta1: {fileID: 1346308931}
   torreta2: {fileID: 689753022}
   torreta3: {fileID: 542636280}
@@ -5962,6 +6001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: rollduration
       value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246426141141067606, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5246426141274042684, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}

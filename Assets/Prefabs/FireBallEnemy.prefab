@@ -9434,5 +9434,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
   fire: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
-  speed: 50
-  flamesDuration: 6
+  speed: 150
+  flamesDuration: 0

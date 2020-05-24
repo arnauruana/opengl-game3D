@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -15,6 +17,9 @@ public class Level1Controller : MonoBehaviour
     public PlayerController playerController;
     public Cinemachine.CinemachineDollyCart airTrackCart;
     public ShipCollision shipCollision;
+    public Trigger turretTrigger1;
+    public Trigger turretTrigger2;
+    public Trigger turretTrigger3;
 
     [Header("Torretas")]
     public Transform torreta1;
@@ -34,20 +39,49 @@ public class Level1Controller : MonoBehaviour
 
     void Update()
     {
+        Quaternion rotation;
 
-        Quaternion rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
-        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta1.rotation.eulerAngles.z);
-        torreta1.rotation = Quaternion.Lerp(torreta1.rotation, rotation, 30 * Time.deltaTime);
+        if (dist(player.position, torreta1.position) < this.turretTrigger1.shotRange)
+        {
+            Debug.Log("Torreta 1");
+            rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
+            rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta1.rotation.eulerAngles.z);
+            torreta1.rotation = Quaternion.Lerp(torreta1.rotation, rotation, 30 * Time.deltaTime);
+            this.turretTrigger1.shoot();
+        }
 
-        rotation = Quaternion.LookRotation((player.position - torreta2.position).normalized);
-        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta2.rotation.eulerAngles.z);
-        torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 30 * Time.deltaTime);
+        if (dist(player.position, torreta2.position) < this.turretTrigger2.shotRange)
+        {
+            Debug.Log("Torreta 2");
+            rotation = Quaternion.LookRotation((player.position - torreta2.position).normalized);
+            rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta2.rotation.eulerAngles.z);
+            torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 30 * Time.deltaTime);
+            this.turretTrigger2.shoot();
+        }
 
-        rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
-        rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta3.rotation.eulerAngles.z);
-        torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 30 * Time.deltaTime);
+        if (dist(player.position, torreta3.position) < this.turretTrigger3.shotRange)
+        {
+            Debug.Log("Torreta 3");
+            rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
+            rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta3.rotation.eulerAngles.z);
+            torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 30 * Time.deltaTime);
+            this.turretTrigger3.shoot();
+        }
     }
     
+
+    private float dist(Vector3 p, Vector3 q)
+    {
+        float x = q.x - p.x;
+        float y = q.y - p.y;
+        float z = q.z - p.z;
+
+        x *= x;
+        y *= y;
+        z *= z;
+
+        return (float)Math.Sqrt(x + y + z);
+    }
 
     public void SetWin()
     {
