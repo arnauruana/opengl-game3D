@@ -40,11 +40,11 @@ public class Level1Controller : MonoBehaviour
     void Update()
     {
         Quaternion rotation;
+        Vector3 aim = this.player.position + new Vector3(0, 0, 10);
 
         if (dist(player.position, torreta1.position) < this.turretTrigger1.shotRange)
         {
-            Debug.Log("Torreta 1");
-            rotation = Quaternion.LookRotation((player.position - torreta1.position).normalized);
+            rotation = Quaternion.LookRotation((aim - torreta1.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta1.rotation.eulerAngles.z);
             torreta1.rotation = Quaternion.Lerp(torreta1.rotation, rotation, 30 * Time.deltaTime);
             this.turretTrigger1.shoot();
@@ -52,8 +52,7 @@ public class Level1Controller : MonoBehaviour
 
         if (dist(player.position, torreta2.position) < this.turretTrigger2.shotRange)
         {
-            Debug.Log("Torreta 2");
-            rotation = Quaternion.LookRotation((player.position - torreta2.position).normalized);
+            rotation = Quaternion.LookRotation((aim - torreta2.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta2.rotation.eulerAngles.z);
             torreta2.rotation = Quaternion.Lerp(torreta2.rotation, rotation, 30 * Time.deltaTime);
             this.turretTrigger2.shoot();
@@ -61,8 +60,7 @@ public class Level1Controller : MonoBehaviour
 
         if (dist(player.position, torreta3.position) < this.turretTrigger3.shotRange)
         {
-            Debug.Log("Torreta 3");
-            rotation = Quaternion.LookRotation((player.position - torreta3.position).normalized);
+            rotation = Quaternion.LookRotation((aim - torreta3.position).normalized);
             rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, torreta3.rotation.eulerAngles.z);
             torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 30 * Time.deltaTime);
             this.turretTrigger3.shoot();

@@ -18,11 +18,11 @@ public class ShipCollision : MonoBehaviour
     {
         if (collision.collider.tag != "AllyFireball")
         {
-            if (collision.collider.tag == "EnemyFire")
+            if (collision.collider.tag == "EnemyFire") // impacto con misil enemigo
             {
                 this.health.Damage(20);
             }
-            else
+            else // choque contra obstaculo
             {
                 this.explode();
                 this.level1Controller.gameOver();
