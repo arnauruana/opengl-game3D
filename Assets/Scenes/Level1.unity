@@ -1844,6 +1844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2615486369782789123, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2615486369782789127, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2258,6 +2263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615486369782789123, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2615486369782789127, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -3611,6 +3621,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: fireBall
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}
 --- !u!4 &1346308930 stripped
@@ -6100,6 +6116,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ebb2389ee10375240a90ea74a9f505f7, type: 2}
+    - target: {fileID: 6253459143263469408, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6253459143263469409, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_IsTrigger

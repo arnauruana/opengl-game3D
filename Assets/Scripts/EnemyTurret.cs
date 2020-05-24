@@ -27,7 +27,7 @@ public class EnemyTurret : MonoBehaviour
     public void explode()
     {
         GameObject explosion = Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation) as GameObject;
-        Destroy(explosion, 5);
+        Destroy(explosion, 1.75f);
 
         Destroy(this.transform.parent.parent.gameObject);
     }

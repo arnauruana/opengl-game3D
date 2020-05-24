@@ -186,7 +186,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.39280286, b: 0.07058823, a: 1}
+      maxColor: {r: 0.07058823, g: 0.75300246, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4889,7 +4889,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.08018869, g: 0.26395494, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -9376,7 +9376,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3349fc02d104e2b458470ec533f51c16, type: 2}
+  - {fileID: 2100000, guid: 070f683216ff0a2458c1039e8efdabcb, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9433,8 +9433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccbc6602a7a94334eb913c216c9e23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
-  fire: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
+  explosion: {fileID: 1828176872806910, guid: 7ccf3b64d74cb6a4d9233ee5398d2193, type: 3}
+  fire: {fileID: 9000317044188514776, guid: 54d9fdb455209f142b000540a57349da, type: 3}
   speed: 200
   flamesDuration: 0
 --- !u!135 &3737871012075810213
