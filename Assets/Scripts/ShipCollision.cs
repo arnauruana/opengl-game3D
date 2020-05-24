@@ -29,6 +29,17 @@ public class ShipCollision : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        
+        //tag cambiable para distinguir enemigos
+        if (collider.tag == "EnemyFire")
+        {
+            this.health.Damage(20);
+        }
+    }
+    
+
    
     public void explode()
     {

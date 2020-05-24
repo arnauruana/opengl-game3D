@@ -11,26 +11,27 @@ public class Fireball : MonoBehaviour
     public float speed;
     public float flamesDuration;
 
-    private Collision collision;
+    private Collider collider;
 
     void FixedUpdate()
     {
         this.transform.Translate(Vector3.forward * (speed * Time.deltaTime));
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
-        this.collision = collision;
 
+        this.collider = collider;
         this.destroyFireball();
     }
+
 
     public void destroyFireball()
     {
         GameObject explosion = Instantiate(this.explosion, this.transform.position, this.transform.rotation) as GameObject;
         Destroy(explosion, 1);
         
-        if (this.collision.collider.tag == "Terrain") // fire on grass
+        if (this.collider.tag == "Terrain") // fire on grass
         {
             GameObject fire = Instantiate(this.fire, this.transform.position, this.transform.rotation) as GameObject;
             Destroy(fire, this.flamesDuration);

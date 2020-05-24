@@ -1847,7 +1847,7 @@ PrefabInstance:
     - target: {fileID: 2615486369782789123, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2615486369782789127, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -1904,6 +1904,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: fireBallEnemy
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}
 --- !u!4 &542636279 stripped
@@ -2267,7 +2273,7 @@ PrefabInstance:
     - target: {fileID: 2615486369782789123, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2615486369782789127, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -2324,6 +2330,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: fireBallEnemy
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}
 --- !u!4 &689753021 stripped
@@ -3624,6 +3636,12 @@ PrefabInstance:
     - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
       propertyPath: fireBall
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: fireBallEnemy
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
         type: 3}
@@ -6121,10 +6139,20 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6253459143263469408, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6253459143263469409, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6253459143263469410, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6253459143263469415, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
