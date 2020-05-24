@@ -4,6 +4,7 @@ public class ShipCollision : MonoBehaviour
 {
     public Level1Controller level1Controller;
     public PlayerController player;
+    public HealthBar health;
 
     public Cinemachine.CinemachineDollyCart cart;
 
@@ -17,9 +18,15 @@ public class ShipCollision : MonoBehaviour
     {
         if (collision.collider.tag != "AllyFireball")
         {
-            this.explode();
-
-            this.level1Controller.gameOver();
+            if (collision.collider.tag == "EnemyFire")
+            {
+                this.health.Damage(20);
+            }
+            else
+            {
+                this.explode();
+                this.level1Controller.gameOver();
+            }
         }
     }
 

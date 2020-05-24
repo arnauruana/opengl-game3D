@@ -184,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6112066709214337416}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.1699996, z: 4.8100038}
+  m_LocalPosition: {x: 0, y: 4.4, z: 5.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6275522375741860074}
@@ -206,7 +206,7 @@ MonoBehaviour:
   shotSound: {fileID: 8000627232168497202}
   aimRotation: {fileID: 6275522375741860074}
   destroyDelay: 2.5
-  fireRate: 0.5
+  fireRate: 1
   shotRange: 100
 --- !u!82 &8000627232168497202
 AudioSource:

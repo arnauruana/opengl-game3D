@@ -4676,9 +4676,10 @@ GameObject:
   - component: {fileID: 198706150799401992}
   - component: {fileID: 199577645087675124}
   - component: {fileID: 6470678567890747800}
+  - component: {fileID: 3737871012075810213}
   m_Layer: 0
   m_Name: FireBallEnemy
-  m_TagString: Untagged
+  m_TagString: EnemyFire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4690,9 +4691,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947871717301538}
-  m_LocalRotation: {x: 0.4254858, y: 0.37314972, z: 0.80022234, w: -0.19840723}
-  m_LocalPosition: {x: 6.67, y: 1, z: -53.73}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4577187839491108}
   m_Father: {fileID: 0}
@@ -9434,5 +9435,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
   fire: {fileID: 1478314613700728, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
-  speed: 150
+  speed: 400
   flamesDuration: 0
+--- !u!135 &3737871012075810213
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947871717301538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.35
+  m_Center: {x: 0, y: 0, z: 1.0000001}

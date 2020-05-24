@@ -9,6 +9,7 @@ TagManager:
   - AllyShip
   - Terrain
   - Laser
+  - EnemyFire
   layers:
   - Default
   - TransparentFX
