@@ -359,6 +359,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101524291}
     m_Modifications:
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: level1Controller
+      value: 
+      objectReference: {fileID: 1474772684}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1431,7 +1442,7 @@ PrefabInstance:
         type: 3}
       propertyPath: explosionEffect
       value: 
-      objectReference: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -1922,6 +1933,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
         type: 3}
+    - target: {fileID: 7388692060267333755, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}
 --- !u!4 &542636279 stripped
@@ -2197,7 +2214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: explosionEffect
       value: 
-      objectReference: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -2358,6 +2375,12 @@ PrefabInstance:
       propertyPath: fireBallEnemy
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 7388692060267333755, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}
@@ -3667,6 +3690,12 @@ PrefabInstance:
       propertyPath: fireBallEnemy
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 7388692060267333755, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9643b6e62223d4583d1fe77759ff3c, type: 3}

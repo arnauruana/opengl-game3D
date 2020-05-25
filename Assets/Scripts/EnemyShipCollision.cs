@@ -24,7 +24,7 @@ public class EnemyShipCollision : MonoBehaviour
     public void explode()
     {
         GameObject explosion = Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation) as GameObject;
-
+        explosion.transform.localScale = new Vector3(10f, 10f, 10f);
         Destroy(explosion, 8);
         Destroy(this.transform.parent.gameObject);
     }
