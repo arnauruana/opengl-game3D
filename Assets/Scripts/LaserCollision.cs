@@ -7,18 +7,6 @@ public class LaserCollision : MonoBehaviour
     public ShipCollision shipCollision;
     public Level1Controller level1Controller;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnParticleCollision(GameObject obj)
     {
         if (obj.tag == "AllyShip")
