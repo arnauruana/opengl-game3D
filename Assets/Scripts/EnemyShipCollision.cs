@@ -26,6 +26,9 @@ public class EnemyShipCollision : MonoBehaviour
         GameObject explosion = Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation) as GameObject;
         explosion.transform.localScale = new Vector3(10f, 10f, 10f);
         Destroy(explosion, 2);
+        ParticleSystem ps = explosion.GetComponent<ParticleSystem>();
+        var main = ps.main;
+        main.loop = false;
         Destroy(this.gameObject);
     }
 
