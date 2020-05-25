@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public class FireballEnemy : MonoBehaviour
+public class Fireball : MonoBehaviour
 {
     [Header("Effects")]
     public GameObject explosion;
