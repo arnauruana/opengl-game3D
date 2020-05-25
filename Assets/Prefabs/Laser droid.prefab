@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1982658620770580814}
   - component: {fileID: 7410909847172563832}
   - component: {fileID: 3883332504507236225}
+  - component: {fileID: 3583205865203293723}
   m_Layer: 0
   m_Name: Laser droid
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3303540247852452701}
   m_LocalRotation: {x: -0.50254583, y: 0.44512448, z: 0.7088427, w: 0.21645795}
-  m_LocalPosition: {x: 887.0366, y: 50.643635, z: 122.01218}
+  m_LocalPosition: {x: 887.0366, y: 50.643635, z: 121.53}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_Children:
   - {fileID: 6843612486931737407}
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &3583205865203293723
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303540247852452701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00586247
+  m_Center: {x: 0.000000117689964, y: -0.0008624622, z: 0.000043653057}
 --- !u!1 &6843612486931737280
 GameObject:
   m_ObjectHideFlags: 0
