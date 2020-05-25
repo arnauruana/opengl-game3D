@@ -14,7 +14,7 @@ public class EnemyShipCollision : MonoBehaviour
             {
                 this.explode();
             }
-            else // choque contra nuestra nave
+            else // choque contra nuestra nave (ya explota nuestra nave, no hace falta)
             {
                 this.destroy();
             }
@@ -25,12 +25,12 @@ public class EnemyShipCollision : MonoBehaviour
     {
         GameObject explosion = Instantiate(this.explosionEffect, this.transform.position, this.transform.rotation) as GameObject;
         explosion.transform.localScale = new Vector3(10f, 10f, 10f);
-        Destroy(explosion, 8);
-        Destroy(this.transform.parent.gameObject);
+        Destroy(explosion, 2);
+        Destroy(this.gameObject);
     }
 
     public void destroy()
     {
-        Destroy(this.transform.parent.gameObject);
+        Destroy(this.gameObject);
     }
 }

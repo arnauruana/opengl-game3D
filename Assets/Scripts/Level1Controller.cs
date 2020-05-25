@@ -100,7 +100,7 @@ public class Level1Controller : MonoBehaviour
         this.airTrackCart.m_Speed = 0;
         this.playerController.enabled = false;
 
-        this.shipCollision.explode();
+        //this.shipCollision.explode();
 
         this.healthBar.SetActive(false);
         this.gameOverMenu.SetActive(true);

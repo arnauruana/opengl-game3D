@@ -9,6 +9,14 @@ public class HealthBar : MonoBehaviour
     public Image healthbar;
     public ShipCollision ship;
     public Level1Controller level1Controller;
+    
+    private GodMode godMode;
+
+
+    void Awake()
+    {
+        this.godMode = GameObject.FindObjectOfType<GodMode>();
+    }
 
     public void SetMaxHealth(int maxhealth)
     {
@@ -25,6 +33,8 @@ public class HealthBar : MonoBehaviour
 
     public void Damage(int damage)
     {
+        if (this.godMode != null && this.godMode.isEnabled()) return; // si esta el godmode no inflinge daño
+
         slider.value -= damage;
         healthbar.color = gradient.Evaluate(slider.normalizedValue);
         this.Check();
