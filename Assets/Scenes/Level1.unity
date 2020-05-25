@@ -811,6 +811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192192088}
   - component: {fileID: 192192087}
+  - component: {fileID: 192192089}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -854,6 +855,24 @@ Transform:
   m_Father: {fileID: 1373123600}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.848, y: 0, z: 0}
+--- !u!114 &192192089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192192086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df1ab7cefb395b41b3446cdc1b17e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 966564054}
+  fireball: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
+  shotSound: {fileID: 1303562689}
+  maximumLength: 1000
+  destroyDelay: 2.5
+  fireRate: 2.5
 --- !u!1001 &210276588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6071,6 +6090,11 @@ PrefabInstance:
       propertyPath: shotSound
       value: 
       objectReference: {fileID: 1303562689}
+    - target: {fileID: 5246426140300520277, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_LocalRotation.y

@@ -57,7 +57,7 @@ public class Disparador : MonoBehaviour
     {
         this.shotSound.Play();
 
-        Transform onTopHierachy = this.transform.parent.parent.parent.parent.parent.parent;
+        Transform onTopHierachy = this.transform.parent.parent;
         GameObject fireball = Instantiate(this.fireball, this.transform.position, this.transform.rotation, onTopHierachy) as GameObject;
         Destroy(fireball, this.destroyDelay);
     }
