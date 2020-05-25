@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5748624829826544663}
   - component: {fileID: 3646844139632463393}
   - component: {fileID: 7034824958606439128}
+  - component: {fileID: 8737438240875226361}
+  - component: {fileID: 3243827830740410447}
   m_Layer: 0
   m_Name: SmallSpaceFighter
   m_TagString: Untagged
@@ -82,3 +84,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8737438240875226361
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762999971421865476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4344551590124973497, guid: ba53aa1b036f6444f9dcbacc3fd97c11, type: 3}
+--- !u!114 &3243827830740410447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762999971421865476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298a908fffc2324a8b00bf697e1964c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Controller: {fileID: 0}
+  explosionEffect: {fileID: 0}
