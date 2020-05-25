@@ -6204,7 +6204,7 @@ PrefabInstance:
     - target: {fileID: 6253459143263469410, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: AllyShip
       objectReference: {fileID: 0}
     - target: {fileID: 6253459143263469415, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}

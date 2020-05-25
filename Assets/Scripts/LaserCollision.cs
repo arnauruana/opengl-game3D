@@ -19,9 +19,12 @@ public class LaserCollision : MonoBehaviour
         
     }
 
-    void OnParticleCollision()
+    void OnParticleCollision(GameObject obj)
     {
-        shipCollision.explode();
-        level1Controller.gameOver();
+        if (obj.tag == "AllyShip")
+        {
+            shipCollision.explode();
+            level1Controller.gameOver();
+        }
     }
 }
