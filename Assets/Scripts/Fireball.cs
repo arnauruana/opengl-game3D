@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public class FireballEnemy : MonoBehaviour
+public class Fireball : MonoBehaviour
 {
     [Header("Effects")]
     public GameObject explosion;
@@ -11,27 +11,25 @@ public class FireballEnemy : MonoBehaviour
     public float speed;
     public float flamesDuration;
 
-    private Collider collider;
+    private Collision collision;
 
     void FixedUpdate()
     {
         this.transform.Translate(Vector3.forward * (speed * Time.deltaTime));
     }
 
-    void OnTriggerEnter(Collider collider)
+    void OnCollisionEnter(Collision collision)
     {
-
-        this.collider = collider;
+        this.collision = collision;
         this.destroyFireball();
     }
-
 
     public void destroyFireball()
     {
         GameObject explosion = Instantiate(this.explosion, this.transform.position, this.transform.rotation) as GameObject;
         Destroy(explosion, 1);
         
-        if (this.collider.tag == "Terrain") // fire on grass
+        if (this.collision.collider.tag == "Terrain") // fire on grass
         {
             GameObject fire = Instantiate(this.fire, this.transform.position, this.transform.rotation) as GameObject;
             Destroy(fire, this.flamesDuration);
