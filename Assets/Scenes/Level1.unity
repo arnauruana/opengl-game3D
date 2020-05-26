@@ -873,6 +873,7 @@ MonoBehaviour:
   maximumLength: 1000
   destroyDelay: 2.5
   fireRate: 2.5
+  trigger: {fileID: 935090057}
 --- !u!1001 &210276588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2684,6 +2685,12 @@ MonoBehaviour:
 --- !u!4 &904496394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5246426140250973689, guid: 08bef709fd0536144a1c989405b5fc9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5246426140420219123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &935090057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5246426140300520278, guid: 08bef709fd0536144a1c989405b5fc9e,
     type: 3}
   m_PrefabInstance: {fileID: 5246426140420219123}
   m_PrefabAsset: {fileID: 0}

@@ -4679,7 +4679,7 @@ GameObject:
   - component: {fileID: 7024076054754572605}
   - component: {fileID: 6470678567890747800}
   m_Layer: 0
-  m_Name: FireBall
+  m_Name: Fireball
   m_TagString: AllyFireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4692,7 +4692,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947871717301538}
-  m_LocalRotation: {x: 0.4254858, y: 0.37314972, z: 0.80022234, w: -0.19840723}
+  m_LocalRotation: {x: 0.00032699155, y: 0.537454, z: -0.00020840066, w: 0.84329295}
   m_LocalPosition: {x: 6.67, y: 1, z: -53.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

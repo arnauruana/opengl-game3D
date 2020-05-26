@@ -10,14 +10,15 @@ public class Disparador : MonoBehaviour
     public float maximumLength;
     public float destroyDelay;
     public float fireRate;
-    
+
+    public Transform trigger;
+
     private Ray rayMouse;
     private Vector3 position;
     private Vector3 direction;
     private Quaternion rotation;
 
     private Quaternion finalrotation;
-    private GameObject aux;
     private float timeToFire;
 
     void Start()
@@ -85,11 +86,12 @@ public class Disparador : MonoBehaviour
             this.shootFireball();
 
         }
+
     }
-    
+ 
     private void rotateToMouseDirection(GameObject obj, Vector3 destination)
     {
-        this.direction = destination - obj.transform.position;
+        this.direction = destination - trigger.position;
         this.rotation = Quaternion.LookRotation(this.direction);
         finalrotation = Quaternion.Lerp(obj.transform.rotation, rotation, 1);
     }
@@ -99,7 +101,7 @@ public class Disparador : MonoBehaviour
         this.shotSound.Play();
 
         Transform onTopHierachy = this.transform.parent.parent;
-        GameObject fireball = Instantiate(this.fireball, this.transform.position, finalrotation, onTopHierachy) as GameObject;
+        GameObject fireball = Instantiate(this.fireball, trigger.position, finalrotation, onTopHierachy) as GameObject;
         Destroy(fireball, this.destroyDelay);
     }
 }
