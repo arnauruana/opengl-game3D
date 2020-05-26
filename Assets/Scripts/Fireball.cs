@@ -24,6 +24,13 @@ public class Fireball : MonoBehaviour
         this.destroyFireball();
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        GameObject explosion = Instantiate(this.explosion, this.transform.position, this.transform.rotation) as GameObject;
+        Destroy(explosion, 1);
+        Destroy(this.gameObject);
+    }
+
     public void destroyFireball()
     {
         GameObject explosion = Instantiate(this.explosion, this.transform.position, this.transform.rotation) as GameObject;

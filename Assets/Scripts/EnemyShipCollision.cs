@@ -4,7 +4,16 @@ public class EnemyShipCollision : MonoBehaviour
 {
     public Level1Controller level1Controller;
     public GameObject explosionEffect;
-       
+
+    public int maxHealth;
+    public int damageTaken;
+
+    private int health;
+    
+    void Awake()
+    {
+        this.health = this.maxHealth;
+    }
 
     void OnTriggerEnter(Collider collider)
     {
@@ -12,13 +21,19 @@ public class EnemyShipCollision : MonoBehaviour
         {
             if (collider.tag == "AllyFireball") // destruccion contra nuestros disparos
             {
-                this.explode();
+                this.damage(this.damageTaken);
             }
             else // choque contra nuestra nave (ya explota nuestra nave, no hace falta)
             {
-                this.destroy();
+                this.damage(this.maxHealth);
             }
+            if (this.health <= 0) this.explode();
         }
+    }
+
+    public void damage(int damage)
+    {
+        this.health -= damage;
     }
 
     public void explode()
@@ -32,11 +47,6 @@ public class EnemyShipCollision : MonoBehaviour
         main.loop = false;
         */
         //escala el tamaño de la explosion
-        Destroy(this.gameObject);
-    }
-
-    public void destroy()
-    {
         Destroy(this.gameObject);
     }
 }

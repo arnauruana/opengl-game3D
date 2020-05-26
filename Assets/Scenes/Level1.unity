@@ -370,6 +370,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: damageTaken
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1499,6 +1509,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: damageTaken
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4646469341855925020, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
@@ -2281,6 +2301,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: damageTaken
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2614,6 +2644,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: damageTaken
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -4510,6 +4550,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: damageTaken
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -5887,6 +5937,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
         type: 3}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: damageTaken
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -6335,6 +6395,16 @@ PrefabInstance:
       propertyPath: level1Controller
       value: 
       objectReference: {fileID: 1474772684}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: damageTaken
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: m_IsTrigger
