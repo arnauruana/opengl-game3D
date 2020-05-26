@@ -4,14 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    private SceneSwitcher sceneSwitcher;
+
+    void Awake()
+    {
+        this.sceneSwitcher = GameObject.FindObjectOfType<SceneSwitcher>();
+    }
+
     public void restartPressed()
     {
-        SceneManager.LoadScene("Level1");
-        // SceneManager.LoadScene("Level2");
+        this.sceneSwitcher.reloadScene();
     }
 
     public void exitPressed()
     {
-        SceneManager.LoadScene("Menu");
+        this.sceneSwitcher.switchToScene("Menu");
     }
 }

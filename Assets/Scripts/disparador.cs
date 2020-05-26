@@ -67,6 +67,8 @@ public class Disparador : MonoBehaviour
 
     void Update()
     {
+        if (this.trigger == null) return;
+
         if (Input.GetMouseButton(0) && Time.time >= this.timeToFire)
         {
             this.timeToFire = Time.time + 1 / this.fireRate;

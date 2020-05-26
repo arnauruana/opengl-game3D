@@ -21,6 +21,7 @@ public class Level1Controller : MonoBehaviour
     public Trigger turretTrigger2;
     public Trigger turretTrigger3;
 
+
     [Header("Torretas")]
     public Transform torreta1;
     public Transform torreta2;
@@ -30,7 +31,12 @@ public class Level1Controller : MonoBehaviour
     public GameObject healthBar;
 
     private bool win;
+    private SceneSwitcher sceneSwitcher;
 
+    void Awake()
+    {
+        this.sceneSwitcher = GameObject.FindObjectOfType<SceneSwitcher>();
+    }
 
     void Start()
     {
@@ -87,7 +93,8 @@ public class Level1Controller : MonoBehaviour
     public void SetWin()
     {
         win = true;
-        Debug.Log("Win!");
+        
+        this.sceneSwitcher.switchToScene("Leve2");
     }
 
     public void restartScene()
