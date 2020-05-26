@@ -2603,6 +2603,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297608403}
     m_Modifications:
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: level1Controller
+      value: 
+      objectReference: {fileID: 1474772684}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -2668,7 +2679,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2444385017635375839, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
 --- !u!114 &904496391 stripped
 MonoBehaviour:
@@ -4482,6 +4499,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297608403}
     m_Modifications:
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: level1Controller
+      value: 
+      objectReference: {fileID: 1474772684}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -4547,7 +4575,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2444385017635375839, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
 --- !u!1001 &1758087967
 PrefabInstance:
@@ -5842,6 +5876,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297608403}
     m_Modifications:
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: level1Controller
+      value: 
+      objectReference: {fileID: 1474772684}
+    - target: {fileID: -5092486548308949088, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -5907,7 +5952,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2444385017635375839, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
 --- !u!4 &5006512735641159025 stripped
 Transform:
@@ -6272,6 +6323,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Droid
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: level1Controller
+      value: 
+      objectReference: {fileID: 1474772684}
+    - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df16ac63383843f4abc8c8edf946828b, type: 3}
