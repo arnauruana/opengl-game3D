@@ -21,7 +21,6 @@ public class Level1Controller : MonoBehaviour
     public Trigger turretTrigger2;
     public Trigger turretTrigger3;
 
-
     [Header("Torretas")]
     public Transform torreta1;
     public Transform torreta2;
@@ -45,6 +44,14 @@ public class Level1Controller : MonoBehaviour
 
     void Update()
     {
+        // WARNING no entiendo por que no funciona
+        // if (this.airTrackCart != null && this.airTrackCart.m_Position == 1709.097) // final del path = win
+        // {
+        //     Debug.Log("WIN");
+        //     this.SetWin();
+        // }
+        // WARNING
+
         Quaternion rotation;
 
         if (this.player == null) return;
@@ -92,9 +99,8 @@ public class Level1Controller : MonoBehaviour
 
     public void SetWin()
     {
-        win = true;
-        
-        this.sceneSwitcher.switchToScene("Leve2");
+        this.win = true;
+        this.sceneSwitcher.switchToScene(2);
     }
 
     public void restartScene()
