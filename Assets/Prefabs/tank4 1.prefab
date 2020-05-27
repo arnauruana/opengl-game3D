@@ -406,9 +406,10 @@ GameObject:
   - component: {fileID: 2444385017635375837}
   - component: {fileID: 2444385017635375839}
   - component: {fileID: -5092486548308949088}
+  - component: {fileID: 2305186200485581366}
   m_Layer: 0
   m_Name: tank4 1
-  m_TagString: Untagged
+  m_TagString: EnemyTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,3 +460,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level1Controller: {fileID: 0}
   explosionEffect: {fileID: 0}
+  maxHealth: 0
+  damageTaken: 0
+--- !u!114 &2305186200485581366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444385017635375834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99eb73352406e1249b6338a89f0da3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20

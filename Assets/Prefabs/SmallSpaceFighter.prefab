@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4646469341855925020}
   m_Layer: 0
   m_Name: SmallSpaceFighter
-  m_TagString: Untagged
+  m_TagString: EnemySpaceShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level1Controller: {fileID: 0}
   explosionEffect: {fileID: 0}
+  maxHealth: 0
+  damageTaken: 0
 --- !u!114 &7519613128931667979
 MonoBehaviour:
   m_ObjectHideFlags: 0
