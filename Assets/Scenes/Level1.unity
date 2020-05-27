@@ -359,6 +359,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370559920}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 0}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: level1Controller
@@ -379,6 +387,31 @@ PrefabInstance:
         type: 3}
       propertyPath: damageTaken
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251569480378381417, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251569480378381417, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251569480378381417, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251569480378381417, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251569480378381417, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -449,6 +482,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 600.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 1274901681}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: fireRate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -1498,6 +1552,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370559920}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 0}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: level1Controller
@@ -1593,6 +1655,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 600.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 744952748}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: fireRate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -2290,6 +2373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370559920}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
     - target: {fileID: 3243827830740410447, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: level1Controller
@@ -2381,6 +2468,27 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 600.00006
       objectReference: {fileID: 0}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 677306988}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: fireRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: speed
@@ -2398,6 +2506,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd, type: 3}
+--- !u!82 &677306988 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 677306987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &689753020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2489,6 +2603,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2615486369782789127, guid: 7f9643b6e62223d4583d1fe77759ff3c,
     type: 3}
   m_PrefabInstance: {fileID: 689753020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &744952748 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 442365575}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &755397067 stripped
 Transform:
@@ -3497,6 +3617,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267318633}
   m_CullTransparentMesh: 0
+--- !u!82 &1274901681 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 56572905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1284551129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: 956bd2acf7aae244dac8fc20cf57858d,
