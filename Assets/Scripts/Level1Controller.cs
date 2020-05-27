@@ -52,10 +52,14 @@ public class Level1Controller : MonoBehaviour
         // }
         // WARNING
 
-        Quaternion rotation;
-
         if (this.player == null) return;
 
+        this.turretsAI();
+    }
+
+    private void turretsAI()
+    {
+        Quaternion rotation;
         Vector3 aim = this.player.position + new Vector3(0, 0, 10);
 
         if (this.torreta1 != null && dist(player.position, torreta1.position) < this.turretTrigger1.shotRange)
