@@ -6,19 +6,45 @@ using UnityEngine.UI;
 
 public class ShowValue : MonoBehaviour
 {
-    public TextMeshProUGUI onoffText;
     public TextMeshProUGUI percentageText;
     
-    public Toggle myToggle;
 
+    public AudioSource transition;
+    public AudioSource menuMusic;
+    public bool mute;
+    public float volume;
+
+    void Start()
+    {
+        mute = false;
+        volume = 100;
+        textUpdateVolume(volume);
+    }
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M) )
+        {
+            if (mute)
+            {
+                mute = false;
+                textUpdateVolume(volume);
+
+            }
+            else
+            {
+                mute = true;
+                textUpdateVolume(0);
+            }
+
+        }
+    }
     public void textUpdateVolume(float value)
     {
-        this.percentageText.text = Mathf.RoundToInt(value * 100) + "%";
+        if (!mute) volume = value;
+        this.percentageText.text = value + "%";
+        transition.volume = 0.06f * (value/100);
+        menuMusic.volume = 0.15f * (value/100);
     }
 
-    public void textUpdateGodMode()
-    {
-        if (this.myToggle.isOn) this.onoffText.text = "On";
-        else this.onoffText.text = "Off";
-    }
+    
 }

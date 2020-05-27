@@ -3600,9 +3600,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ac4bab47e264449b3719413a8a9736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onoffText: {fileID: 0}
   percentageText: {fileID: 511421852}
-  myToggle: {fileID: 0}
+  transition: {fileID: 512267204}
+  menuMusic: {fileID: 2024963229}
 --- !u!1 &833962809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,9 +6016,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1582057262}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
