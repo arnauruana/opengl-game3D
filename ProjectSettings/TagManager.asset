@@ -12,6 +12,7 @@ TagManager:
   - EnemyFire
   - EnemySpaceShip
   - EnemyTank
+  - EnemyDroid
   layers:
   - Default
   - TransparentFX
