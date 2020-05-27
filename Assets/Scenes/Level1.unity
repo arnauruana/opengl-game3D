@@ -2844,6 +2844,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
@@ -3087,7 +3098,7 @@ PrefabInstance:
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 529
+      value: 570
       objectReference: {fileID: 0}
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
@@ -4786,6 +4797,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
@@ -6106,7 +6128,22 @@ PrefabInstance:
     - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9459671
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17497723
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2631673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444385017466682363, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.072610654
       objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
@@ -6173,6 +6210,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 5626414357143511483, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
