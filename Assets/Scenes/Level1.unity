@@ -3077,7 +3077,7 @@ PrefabInstance:
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 227
+      value: 184
       objectReference: {fileID: 0}
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
@@ -3087,7 +3087,7 @@ PrefabInstance:
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 573
+      value: 529
       objectReference: {fileID: 0}
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
@@ -3112,7 +3112,7 @@ PrefabInstance:
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 533101926961621982, guid: 7e22752de15b20a45b305da8d6440d8c,
         type: 3}
@@ -6565,8 +6565,35 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: shotSound
+      value: 
+      objectReference: {fileID: 6477566632562625147}
+    - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 2065385380}
+    - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: enemyFireball
+      value: 
+      objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
+        type: 3}
+    - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df16ac63383843f4abc8c8edf946828b, type: 3}
+--- !u!82 &6477566632562625147 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6560014592257940240, guid: df16ac63383843f4abc8c8edf946828b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6477566632562625146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6843612487514405951
 PrefabInstance:
   m_ObjectHideFlags: 0
