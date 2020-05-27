@@ -2,7 +2,7 @@
 
 public class ShipCollision : MonoBehaviour
 {
-    public Level2Controller level2Controller;
+    public Level1Controller level1Controller;
     public HealthBar health;
     public GameObject explosionEffect;
        
@@ -12,7 +12,7 @@ public class ShipCollision : MonoBehaviour
         if (collision.collider.tag != "AllyFireball")
         {
             this.explode();
-            this.level2Controller.gameOver();
+            this.level1Controller.gameOver();
         }
     }
 
@@ -26,7 +26,7 @@ public class ShipCollision : MonoBehaviour
         else
         {
             this.explode();
-            this.level2Controller.gameOver();
+            this.level1Controller.gameOver();
         }
     }
     
@@ -42,6 +42,6 @@ public class ShipCollision : MonoBehaviour
     void OnParticleTrigger()
     {
         this.explode();
-        this.level2Controller.gameOver();
+        this.level1Controller.gameOver();
     }
 }
