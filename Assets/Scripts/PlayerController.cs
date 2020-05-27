@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Manager")]
-    public Level1Controller level1Controller;
+    public Level2Controller level2Controller;
 
     [Header("Controller")]
     public NaveController naveController;
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("DEAD");
 
-            this.level1Controller.gameOver();
+            this.level2Controller.gameOver();
         }
     }
 }
