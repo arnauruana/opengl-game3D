@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 
 public class MusicController : MonoBehaviour
 {
-
     public AudioSource transition;
     public AudioSource menuMusic;
     public bool mute;
     public float lastVolume;
     public float volume;
     public ShowValue showValue;
+
+    private static MusicController instance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,18 @@ public class MusicController : MonoBehaviour
         showValue.textUpdateVolume(volume);
 
     }
+
     private void Awake()
     {
-        GameObject.DontDestroyOnLoad(this.gameObject);
-
+        if (MusicController.instance == null)
+        {
+            MusicController.instance = this;
+            GameObject.DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            MusicController.Destroy(this.gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +44,8 @@ public class MusicController : MonoBehaviour
         }
     }
 
-    public void changeVolume(){
+    public void changeVolume()
+    {
         if (!mute)
         {
             volume = lastVolume;

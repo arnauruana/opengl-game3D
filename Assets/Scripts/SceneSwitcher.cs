@@ -34,7 +34,7 @@ public class SceneSwitcher : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {

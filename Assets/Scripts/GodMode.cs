@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class GodMode : MonoBehaviour
@@ -27,7 +26,7 @@ public class GodMode : MonoBehaviour
         this.enabled = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F9))
         {
