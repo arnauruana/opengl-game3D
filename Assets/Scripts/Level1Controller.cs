@@ -26,6 +26,14 @@ public class Level1Controller : MonoBehaviour
     public Transform torreta2;
     public Transform torreta3;
 
+    [Header("Torretas")]
+    public Transform tanque1;
+    public Transform tanque2;
+    public Transform tanque3;
+    public Transform tanque1Canion;
+    public Transform tanque2Canion;
+    public Transform tanque3Canion;
+
     [Header("UI")]
     public GameObject healthBar;
 
@@ -52,6 +60,7 @@ public class Level1Controller : MonoBehaviour
         if (this.player == null) return;
 
         this.turretsAI();
+        this.tanksAI();
     }
 
     private void turretsAI()
@@ -82,6 +91,21 @@ public class Level1Controller : MonoBehaviour
             torreta3.rotation = Quaternion.Lerp(torreta3.rotation, rotation, 30 * Time.deltaTime);
             this.turretTrigger3.shoot();
         }
+    }
+
+    private void tanksAI()
+    {
+        Quaternion rotation_head;
+        Quaternion rotation_canion;
+
+
+        rotation_head = Quaternion.LookRotation((this.player.position - tanque1.position).normalized, Vector3.up);
+        rotation_head = Quaternion.Euler(tanque1.rotation.eulerAngles.x, rotation_head.eulerAngles.y, tanque1.rotation.eulerAngles.z); //cabeza solo en Y
+        tanque1.rotation = Quaternion.Lerp(tanque1.rotation, rotation_head, 30 * Time.deltaTime);
+
+        rotation_canion = Quaternion.LookRotation((this.player.position - tanque1Canion.position).normalized, Vector3.up);
+        rotation_canion = Quaternion.Euler(tanque1Canion.rotation.eulerAngles.x, tanque1Canion.rotation.eulerAngles.y, rotation_canion.eulerAngles.z); //cañon solo en Z
+        tanque1Canion.rotation = Quaternion.Lerp(tanque1Canion.rotation, rotation_canion, 30 * Time.deltaTime);
     }
     
 
