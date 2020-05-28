@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class HealthBar : MonoBehaviour
@@ -8,10 +9,22 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image healthbar;
     public ShipCollision ship;
-    public Level1Controller level1Controller;
     
     private GodMode godMode;
-
+    private Level1Controller[] level1Controller;
+    private Level2Controller[] level2Controller;
+    
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            level1Controller = FindObjectsOfType(typeof(Level1Controller)) as Level1Controller[];
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            level2Controller = FindObjectsOfType(typeof(Level2Controller)) as Level2Controller[];
+        }
+    }
 
     void Awake()
     {
@@ -45,7 +58,14 @@ public class HealthBar : MonoBehaviour
         if (this.slider.value <= 0)
         {
             this.ship.explode();
-            this.level1Controller.gameOver();
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                this.level1Controller[0].gameOver();
+            }
+            else if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                this.level2Controller[0].gameOver();
+            }
         }
     }
 }
