@@ -39,22 +39,13 @@ public class MusicController : MonoBehaviour
         if (!mute)
         {
             volume = lastVolume;
-            AudioListener.volume = lastVolume;
+            AudioListener.volume = lastVolume/100;
         }
         else
         {
             volume = 0f;
             AudioListener.volume = 0f;
         }
-        //PlayerPrefs.SetFloat("volume", 0.0F);
-        /*transition.volume = 0.06f * (volume / 100);
-        menuMusic.volume = 0.15f * (volume / 100);
-        AudioSource[] sources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
-        for (int index = 0; index < sources.Length; ++index)
-        {
-            if (mute) sources[index].volume = 0f;
-            else sources[index].volume = lastVolume/100;
-        }
-     */   
+        
     }
 }
