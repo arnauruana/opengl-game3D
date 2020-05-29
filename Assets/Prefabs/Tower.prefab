@@ -171,6 +171,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.19999997
       objectReference: {fileID: 0}
+    - target: {fileID: 8000627232168497202, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8965096569826378924, guid: 2c2d00bba8df31841b0ff9202ebe47f5,
         type: 3}
       propertyPath: fireBallEnemy
