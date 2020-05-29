@@ -9449,4 +9449,4 @@ MonoBehaviour:
   explosion: {fileID: 1828176872806910, guid: 7ccf3b64d74cb6a4d9233ee5398d2193, type: 3}
   fire: {fileID: 9000317044188514776, guid: 54d9fdb455209f142b000540a57349da, type: 3}
   speed: 300
-  flamesDuration: 0
+  flamesDuration: 6

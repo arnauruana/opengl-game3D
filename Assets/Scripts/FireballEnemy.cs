@@ -5,9 +5,11 @@ public class FireballEnemy : MonoBehaviour
 {
     [Header("Effects")]
     public GameObject explosion;
+    public GameObject fire;
 
     [Header("Options")]
     public float speed;
+    public float flamesDuration;
 
     private Collider collider;
 
@@ -18,7 +20,6 @@ public class FireballEnemy : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-
         this.collider = collider;
         this.destroyFireball();
     }
@@ -27,6 +28,12 @@ public class FireballEnemy : MonoBehaviour
     {
         GameObject explosion = Instantiate(this.explosion, this.transform.position, this.transform.rotation) as GameObject;
         Destroy(explosion, 1);
+
+        if (this.collider.tag == "Terrain") // fire on grass
+        {
+            GameObject fire = Instantiate(this.fire, this.transform.position, this.transform.rotation) as GameObject;
+            Destroy(fire, this.flamesDuration);
+        }
 
         Destroy(this.gameObject);
     }

@@ -13,6 +13,8 @@ TagManager:
   - EnemySpaceShip
   - EnemyTank
   - EnemyDroid
+  - Tower
+  - Turret
   layers:
   - Default
   - TransparentFX
