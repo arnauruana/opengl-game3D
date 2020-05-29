@@ -972,7 +972,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shotSound
       value: 
-      objectReference: {fileID: 1361359529}
+      objectReference: {fileID: 739118152}
     - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: shotRange
@@ -990,6 +990,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd, type: 3}
+--- !u!82 &739118152 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 739118151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &772143331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1499,7 +1505,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shotSound
       value: 
-      objectReference: {fileID: 1361359529}
+      objectReference: {fileID: 879979440}
     - target: {fileID: 5934357728013208548, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: shotRange
@@ -1517,6 +1523,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd, type: 3}
+--- !u!82 &879979440 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 879979439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &962968833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,6 +2336,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: damageTaken
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: m_IsTrigger
@@ -2339,7 +2367,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shotSound
       value: 
-      objectReference: {fileID: 1361359529}
+      objectReference: {fileID: 1273429686}
     - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: playerShip
@@ -2355,6 +2383,12 @@ PrefabInstance:
 --- !u!4 &1273429685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1388686751753418137, guid: df16ac63383843f4abc8c8edf946828b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1273429684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1273429686 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6560014592257940240, guid: df16ac63383843f4abc8c8edf946828b,
     type: 3}
   m_PrefabInstance: {fileID: 1273429684}
   m_PrefabAsset: {fileID: 0}
@@ -4074,6 +4108,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid
       objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: damageTaken
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 5350419820384341193, guid: 8131c1968889c934bbd700ab13542db9,
+        type: 3}
     - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: m_IsTrigger
@@ -4089,7 +4139,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shotSound
       value: 
-      objectReference: {fileID: 1361359529}
+      objectReference: {fileID: 1893163989}
     - target: {fileID: 7619189992090869080, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: playerShip
@@ -4105,6 +4155,12 @@ PrefabInstance:
 --- !u!4 &1893163988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1388686751753418137, guid: df16ac63383843f4abc8c8edf946828b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1893163987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1893163989 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6560014592257940240, guid: df16ac63383843f4abc8c8edf946828b,
     type: 3}
   m_PrefabInstance: {fileID: 1893163987}
   m_PrefabAsset: {fileID: 0}
