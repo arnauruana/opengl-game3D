@@ -4676,7 +4676,6 @@ GameObject:
   - component: {fileID: 198706150799401992}
   - component: {fileID: 199577645087675124}
   - component: {fileID: 6999019523779308689}
-  - component: {fileID: 7024076054754572605}
   - component: {fileID: 6470678567890747800}
   m_Layer: 0
   m_Name: Fireball
@@ -9430,27 +9429,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947871717301538}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.73
   m_Center: {x: 0, y: 0, z: 1.0000004}
---- !u!54 &7024076054754572605
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947871717301538}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &6470678567890747800
 MonoBehaviour:
   m_ObjectHideFlags: 0

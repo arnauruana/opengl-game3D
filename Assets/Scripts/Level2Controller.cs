@@ -36,14 +36,12 @@ public class Level2Controller : MonoBehaviour
 
     void Update()
     {
-        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 3000f)
+        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 2969.361f)
         {
             this.SetWin();
         }
 
         if (this.player == null) return;
-        
-
     }
 
     private float dist(Vector3 p, Vector3 q)

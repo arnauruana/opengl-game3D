@@ -52,7 +52,7 @@ public class Level1Controller : MonoBehaviour
 
     void Update()
     {
-        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 1349f)
+        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 1400f)
         {
             this.SetWin();
         }

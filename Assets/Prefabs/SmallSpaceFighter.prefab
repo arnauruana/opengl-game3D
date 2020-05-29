@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298a908fffc2324a8b00bf697e1964c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level1Controller: {fileID: 0}
   explosionEffect: {fileID: 0}
   maxHealth: 0
   damageTaken: 0
@@ -186,7 +185,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.8
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

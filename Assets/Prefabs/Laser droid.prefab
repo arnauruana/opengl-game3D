@@ -4767,8 +4767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c29916b26aae94cb0d5e6698da24ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heatlh: {fileID: 0}
   shipCollision: {fileID: 0}
-  level1Controller: {fileID: 0}
 --- !u!1 &4268720408885087572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4782,7 +4782,7 @@ GameObject:
   - component: {fileID: 660765665071467075}
   - component: {fileID: 4785452882014617946}
   m_Layer: 0
-  m_Name: Laser droid 1
+  m_Name: Laser droid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4861,7 +4861,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4268720408885087572}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.00586247
