@@ -12,6 +12,6 @@ public class EndGame : MonoBehaviour
 
     public void continuePressed()
     {
-        this.sceneSwitcher.switchToScene("Menu");
+        this.sceneSwitcher.switchToScene(0);
     }
 }
