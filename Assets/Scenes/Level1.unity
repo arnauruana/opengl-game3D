@@ -2713,6 +2713,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79eea98f538f22458938be797927bb8, type: 3}
+--- !u!114 &210276589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5057563355278236948, guid: a79eea98f538f22458938be797927bb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 210276588}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4becb4946a4a1448474b06249197a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &211105829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17067,6 +17079,7 @@ MonoBehaviour:
   tanque2Canion: {fileID: 0}
   tanque3Canion: {fileID: 0}
   healthBar: {fileID: 305130862}
+  fade: {fileID: 210276589}
 --- !u!4 &1474772685
 Transform:
   m_ObjectHideFlags: 0
@@ -18276,7 +18289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5c3bcdc1b5256194d94d19291a3623ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f97edbf988cf154e99ff0e13bf5855e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23469,7 +23482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c794542451b0ee740849b041c6a21dc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01e6952e8f2a9bb4ea87d912e0d2a428, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

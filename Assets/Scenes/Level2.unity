@@ -835,7 +835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5c3bcdc1b5256194d94d19291a3623ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f97edbf988cf154e99ff0e13bf5855e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -859,6 +859,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 215616196}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &710431473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5057563355278236948, guid: a79eea98f538f22458938be797927bb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1658665182}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4becb4946a4a1448474b06249197a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &739118151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,7 +1380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c794542451b0ee740849b041c6a21dc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01e6952e8f2a9bb4ea87d912e0d2a428, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2324,6 +2336,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Droid (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: damageTaken
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}
       propertyPath: m_IsTrigger
@@ -3241,6 +3263,7 @@ MonoBehaviour:
   airTrackCart: {fileID: 1899599777}
   shipCollision: {fileID: 2108087472}
   healthBar: {fileID: 1127932046}
+  fade: {fileID: 710431473}
 --- !u!4 &1574155014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
@@ -4073,6 +4096,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Droid
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958092262655667179, guid: df16ac63383843f4abc8c8edf946828b,
+        type: 3}
+      propertyPath: damageTaken
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6795169334102146986, guid: df16ac63383843f4abc8c8edf946828b,
         type: 3}

@@ -40,6 +40,7 @@ public class Level1Controller : MonoBehaviour
     private bool win;
     private SceneSwitcher sceneSwitcher;
 
+    public FadeTransition fade;
     void Awake()
     {
         this.sceneSwitcher = GameObject.FindObjectOfType<SceneSwitcher>();
@@ -125,7 +126,7 @@ public class Level1Controller : MonoBehaviour
     public void SetWin()
     {
         this.win = true;
-        this.sceneSwitcher.loadNextScene();
+        this.fade.Fade();
     }
 
     public void restartScene()
