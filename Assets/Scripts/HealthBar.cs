@@ -18,11 +18,11 @@ public class HealthBar : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            level1Controller = FindObjectsOfType(typeof(Level1Controller)) as Level1Controller[];
+            level2Controller = FindObjectsOfType(typeof(Level2Controller)) as Level2Controller[];
         }
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            level2Controller = FindObjectsOfType(typeof(Level2Controller)) as Level2Controller[];
+            level1Controller = FindObjectsOfType(typeof(Level1Controller)) as Level1Controller[];
         }
     }
 
@@ -60,11 +60,11 @@ public class HealthBar : MonoBehaviour
             this.ship.explode();
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
-                this.level1Controller[0].gameOver();
+                this.level2Controller[0].gameOver();
             }
             else if (SceneManager.GetActiveScene().buildIndex == 2)
             {
-                this.level2Controller[0].gameOver();
+                this.level1Controller[0].gameOver();
             }
         }
     }

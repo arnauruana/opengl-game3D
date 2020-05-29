@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Manager")]
+    public Level1Controller level1Controller;
     public Level2Controller level2Controller;
 
     [Header("Controller")]
@@ -59,12 +61,5 @@ public class PlayerController : MonoBehaviour
         currentLife -= damage;
 
         healthbar.SetHealth(currentLife);
-
-        if (this.currentLife <= 0)
-        {
-            Debug.Log("DEAD");
-
-            this.level2Controller.gameOver();
-        }
     }
 }
