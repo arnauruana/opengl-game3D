@@ -36,15 +36,13 @@ public class Level2Controller : MonoBehaviour
 
     void Update()
     {
-        // WARNING no entiendo por que no funciona
-        // if (this.airTrackCart != null && this.airTrackCart.m_Position == 1709.097f) // final del path = win
-        // {
-        //     Debug.Log("WIN");
-        //     this.SetWin();
-        // }
-        // WARNING
+        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 3000f)
+        {
+            this.SetWin();
+        }
 
         if (this.player == null) return;
+        
 
     }
 

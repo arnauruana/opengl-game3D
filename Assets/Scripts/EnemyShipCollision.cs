@@ -2,7 +2,6 @@
 
 public class EnemyShipCollision : MonoBehaviour
 {
-    public Level1Controller level1Controller;
     public GameObject explosionEffect;
 
     public int maxHealth;
@@ -46,7 +45,6 @@ public class EnemyShipCollision : MonoBehaviour
         var main = ps.main;
         main.loop = false;
         */
-        //escala el tamaño de la explosion
         Destroy(this.gameObject);
     }
 }

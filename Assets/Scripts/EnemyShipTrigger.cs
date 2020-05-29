@@ -27,7 +27,9 @@ public class EnemyShipTrigger : MonoBehaviour
     {
         if (this.playerShip != null && dist(this.playerShip.position, this.transform.position) < this.shotRange)
         {
-            this.transform.rotation = Quaternion.LookRotation((this.playerShip.position - this.transform.position).normalized);
+            Quaternion rotation;
+            rotation = Quaternion.LookRotation((this.playerShip.position - this.transform.position).normalized);
+            this.transform.rotation = Quaternion.Euler(rotation.eulerAngles.x, rotation.eulerAngles.y, rotation.eulerAngles.z);
             this.shoot();
         }
     }
