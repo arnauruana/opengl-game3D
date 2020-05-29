@@ -1013,6 +1013,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 4646469341855925020, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,6 +1108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fireRate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -4560,7 +4570,7 @@ PrefabInstance:
     - target: {fileID: 4646469341855925020, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -4652,6 +4662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fireRate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -5728,6 +5743,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665745521113538550, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -7662,6 +7682,11 @@ PrefabInstance:
       propertyPath: damageTaken
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 4646469341855925020, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5748624829826544663, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7752,6 +7777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fireRate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984525051616955820, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7519613128931667979, guid: 7aec4e68e1ea8f0449fd4d2ad493b9dd,
         type: 3}
@@ -7847,6 +7877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665745521113538550, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -9765,6 +9800,11 @@ PrefabInstance:
       propertyPath: damageTaken
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: -897780670887394778, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -9851,6 +9891,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
         type: 3}
+    - target: {fileID: 8980208864789145587, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
@@ -12874,6 +12919,11 @@ PrefabInstance:
       propertyPath: damageTaken
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: -897780670887394778, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -12960,6 +13010,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
         type: 3}
+    - target: {fileID: 8980208864789145587, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
@@ -15863,6 +15918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665745521113538550, guid: 7f9643b6e62223d4583d1fe77759ff3c,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4004609011111742312, guid: 7f9643b6e62223d4583d1fe77759ff3c,
         type: 3}
@@ -20251,6 +20311,11 @@ PrefabInstance:
       propertyPath: damageTaken
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: -897780670887394778, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2444385017635375834, guid: c64ae55d86f28434daa1855a36538cfc,
         type: 3}
       propertyPath: m_Name
@@ -20337,6 +20402,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1947871717301538, guid: f060581e06b12024d990ec31c397ba4e,
         type: 3}
+    - target: {fileID: 8980208864789145587, guid: c64ae55d86f28434daa1855a36538cfc,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c64ae55d86f28434daa1855a36538cfc, type: 3}
@@ -23516,6 +23586,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.65
       objectReference: {fileID: 0}
+    - target: {fileID: 4216179511631871174, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5246426140250973684, guid: 08bef709fd0536144a1c989405b5fc9e,
         type: 3}
       propertyPath: level1Controller
@@ -23782,6 +23857,16 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1150938616}
+    - target: {fileID: 6355632086422342863, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349201886149715231, guid: 08bef709fd0536144a1c989405b5fc9e,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08bef709fd0536144a1c989405b5fc9e, type: 3}
 --- !u!1001 &6698037304202965872

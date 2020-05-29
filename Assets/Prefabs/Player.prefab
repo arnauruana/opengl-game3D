@@ -5211,6 +5211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1Controller: {fileID: 0}
+  level2Controller: {fileID: 0}
   naveController: {fileID: 5246426141141067606}
   disparador: {fileID: 5246426140300520277}
   nave: {fileID: 5246426140645961568}
@@ -5363,6 +5364,7 @@ MonoBehaviour:
   maximumLength: 0
   destroyDelay: 0
   fireRate: 0
+  trigger: {fileID: 0}
 --- !u!1 &5246426140645961569
 GameObject:
   m_ObjectHideFlags: 0
@@ -11017,7 +11019,6 @@ GameObject:
   - component: {fileID: 7530040555766011446}
   - component: {fileID: 431446010203086794}
   - component: {fileID: 6253459143263469409}
-  - component: {fileID: 6253459143263469408}
   - component: {fileID: 6253459143263469415}
   m_Layer: 0
   m_Name: Body
@@ -11107,22 +11108,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 388742281422982615, guid: 927e92406c4e86441a1a266e37928384, type: 3}
---- !u!54 &6253459143263469408
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6253459143263469410}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &6253459143263469415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11135,13 +11120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6b4b86ff1fdf949a98d1f612a2158c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level1Controller: {fileID: 0}
-  player: {fileID: 5246426140250973684}
   health: {fileID: 0}
-  cart: {fileID: 0}
   explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
-  restartDelay: 2
 --- !u!1 &6962288983388260394
 GameObject:
   m_ObjectHideFlags: 0
