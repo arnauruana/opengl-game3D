@@ -61,7 +61,7 @@ public class Level1Controller : MonoBehaviour
         if (this.player == null) return;
 
         this.turretsAI();
-        this.tanksAI();
+        // this.tanksAI();
     }
 
     private void turretsAI()
