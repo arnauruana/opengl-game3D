@@ -125,12 +125,12 @@ public class Level1Controller : MonoBehaviour
     public void SetWin()
     {
         this.win = true;
-        this.sceneSwitcher.switchToScene(2);
+        this.sceneSwitcher.loadNextScene();
     }
 
     public void restartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       this.sceneSwitcher.reloadScene();
     }
 
     public void gameOver()

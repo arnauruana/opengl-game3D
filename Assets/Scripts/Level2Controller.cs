@@ -46,7 +46,6 @@ public class Level2Controller : MonoBehaviour
 
     }
 
-
     private float dist(Vector3 p, Vector3 q)
     {
         float x = q.x - p.x;
@@ -63,12 +62,12 @@ public class Level2Controller : MonoBehaviour
     public void SetWin()
     {
         this.win = true;
-        this.sceneSwitcher.switchToScene(3);
+        this.sceneSwitcher.loadNextScene();
     }
 
     public void restartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        this.sceneSwitcher.reloadScene();
     }
 
     public void gameOver()
