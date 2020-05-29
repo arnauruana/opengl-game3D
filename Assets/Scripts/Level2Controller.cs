@@ -38,7 +38,7 @@ public class Level2Controller : MonoBehaviour
 
     void Update()
     {
-        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 2969.361f)
+        if (this.airTrackCart != null && this.airTrackCart.m_Position >= 2400f)
         {
             this.SetWin();
         }
