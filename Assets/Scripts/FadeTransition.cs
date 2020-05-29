@@ -4,11 +4,6 @@ using UnityEngine.SceneManagement;
 public class FadeTransition : MonoBehaviour
 {
     public Animator animator;
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void Fade()
     {
