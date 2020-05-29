@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9090454921921919350}
   - component: {fileID: 3566638160205903527}
   m_Layer: 0
-  m_Name: MediumFlamesEnemy 1
+  m_Name: MediumFlamesEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4811,7 +4811,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.5
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
