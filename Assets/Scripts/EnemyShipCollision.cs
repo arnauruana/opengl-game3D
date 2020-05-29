@@ -45,6 +45,8 @@ public class EnemyShipCollision : MonoBehaviour
         var main = ps.main;
         main.loop = false;
         */
-        Destroy(this.gameObject);
+
+        if (this.gameObject.tag == "Turret") Destroy(this.transform.parent.parent.gameObject);
+        else Destroy(this.gameObject);
     }
 }
